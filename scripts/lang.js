@@ -59,14 +59,10 @@
       if (t[key] !== undefined) el.innerHTML = t[key];
     });
 
-    // Side-nav tooltips
-    document.querySelectorAll('.side-nav a[data-label-en]').forEach(a => {
-      a.dataset.label = lang === 'en' ? a.dataset.labelEn : a.getAttribute('data-label-ru') || a.dataset.label;
-    });
-    // Store original RU labels once
+    // Side-nav tooltips — store RU label once, then swap
     document.querySelectorAll('.side-nav a[data-label]').forEach(a => {
       if (!a.dataset.labelRu) a.dataset.labelRu = a.dataset.label;
-      a.dataset.label = lang === 'en' ? (a.dataset.labelEn || a.dataset.label) : a.dataset.labelRu;
+      a.dataset.label = lang === 'en' ? (a.dataset.labelEn || a.dataset.labelRu) : a.dataset.labelRu;
     });
 
     // Swap typewriter strings if window.TW_STRINGS exists

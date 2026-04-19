@@ -9,8 +9,13 @@
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+  }, { threshold: 0.05, rootMargin: '50px 0px 50px 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Hard fallback: reveal everything after 2.5s in case IO never fires
+  setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.in)').forEach(el => el.classList.add('in'));
+  }, 2500);
 
   if (prefersReduced || typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
   gsap.registerPlugin(ScrollTrigger);
