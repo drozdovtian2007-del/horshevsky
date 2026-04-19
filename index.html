@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Horshevsky — Telegram боты, сайты, лендинги, Telegram Mini Apps под ключ" />
+<title>Horshevsky · Разработка под ключ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress"></div>
+
+<!-- Side navigator -->
+<nav class="side-nav" aria-label="Навигация по секциям">
+  <ul>
+    <li><a href="#hero" data-label="Главная" class="active"><span class="dot"></span></a></li>
+    <li><a href="#about" data-label="Обо мне"><span class="dot"></span></a></li>
+    <li><a href="#portfolio" data-label="Портфолио"><span class="dot"></span></a></li>
+    <li><a href="#reviews" data-label="Отзывы"><span class="dot"></span></a></li>
+    <li><a href="#contact" data-label="Контакт"><span class="dot"></span></a></li>
+  </ul>
+</nav>
+
+<!-- Global animated background -->
+<canvas id="three-bg"></canvas>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" class="section hero">
+  <div class="hero-content">
+    <h1 class="hero-title" data-text="Horshevsky">Horshevsky</h1>
+    <p class="hero-sub">
+      <span class="typewriter"></span><span class="caret">|</span>
+    </p>
+    <div class="hero-cta">
+      <a href="#portfolio" class="btn btn-primary">
+        <span>Посмотреть работы</span>
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 4l-1.4 1.4L16.2 11H4v2h12.2l-5.6 5.6L12 20l8-8z"/></svg>
+      </a>
+      <a href="#contact" class="btn btn-ghost">Связаться</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="section-head">
+    <span class="sec-num">01</span>
+    <h2 class="sec-title reveal">Обо мне</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p class="lead">
+        Привет, я <b>Horshevsky</b> — разработчик, который создаёт Telegram-ботов, сайты, лендинги и Telegram Mini Apps под ключ.
+      </p>
+      <p>
+        Работаю быстро, держу связь с клиентом и довожу проект до результата. Пишу чистый код, уважаю дедлайны и не оставляю незаконченных задач.
+      </p>
+      <ul class="facts">
+        <li><span class="n">50+</span><span class="l">проектов</span></li>
+        <li><span class="n">3+</span><span class="l">года в разработке</span></li>
+        <li><span class="n">24/7</span><span class="l">на связи</span></li>
+      </ul>
+    </div>
+    <div class="stack">
+      <div class="stack-card reveal" data-tech="Python">
+        <div class="stack-ico">🐍</div><span>Python</span>
+      </div>
+      <div class="stack-card reveal" data-tech="JavaScript">
+        <div class="stack-ico">JS</div><span>JavaScript</span>
+      </div>
+      <div class="stack-card reveal" data-tech="HTML/CSS">
+        <div class="stack-ico">&lt;/&gt;</div><span>HTML / CSS</span>
+      </div>
+      <div class="stack-card reveal" data-tech="Telegram API">
+        <div class="stack-ico">✈</div><span>Telegram API</span>
+      </div>
+      <div class="stack-card reveal" data-tech="Aiogram">
+        <div class="stack-ico">🤖</div><span>Aiogram</span>
+      </div>
+      <div class="stack-card reveal" data-tech="Three.js">
+        <div class="stack-ico">◈</div><span>Three.js</span>
+      </div>
+      <div class="stack-card reveal" data-tech="GSAP">
+        <div class="stack-ico">⚡</div><span>GSAP</span>
+      </div>
+      <div class="stack-card reveal" data-tech="Git">
+        <div class="stack-ico">⎇</div><span>Git</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section portfolio">
+  <div class="section-head">
+    <span class="sec-num">02</span>
+    <h2 class="sec-title reveal">Портфолио</h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="filters reveal">
+    <button class="filter active" data-filter="all">Все</button>
+    <button class="filter" data-filter="bot">Telegram Боты</button>
+    <button class="filter" data-filter="site">Сайты и лендинги</button>
+    <button class="filter" data-filter="mini">Telegram Mini Apps</button>
+  </div>
+
+  <div class="cards">
+    <article class="card tilt reveal" data-cat="bot">
+      <div class="card-img img-bot-1"><div class="img-tag">BOT</div></div>
+      <div class="card-body">
+        <h3>Бот магазина</h3>
+        <p>Витрина товаров, корзина, оплата и уведомления админу — всё внутри Telegram.</p>
+        <button class="more" data-id="bot1">Подробнее →</button>
+      </div>
+    </article>
+
+    <article class="card tilt reveal" data-cat="bot">
+      <div class="card-img img-bot-2"><div class="img-tag">BOT</div></div>
+      <div class="card-body">
+        <h3>Бот-помощник</h3>
+        <p>Приём заявок, FAQ и автоответы 24/7 для сервисной компании.</p>
+        <button class="more" data-id="bot2">Подробнее →</button>
+      </div>
+    </article>
+
+    <article class="card tilt reveal" data-cat="bot">
+      <div class="card-img img-bot-3"><div class="img-tag">BOT</div></div>
+      <div class="card-body">
+        <h3>Бот-рассылка</h3>
+        <p>Сегментированные рассылки по подписчикам с аналитикой открытий.</p>
+        <button class="more" data-id="bot3">Подробнее →</button>
+      </div>
+    </article>
+
+    <article class="card tilt reveal" data-cat="site">
+      <div class="card-img img-site-1"><div class="img-tag">WEB</div></div>
+      <div class="card-body">
+        <h3>Лендинг студии</h3>
+        <p>Продающая одностраничка с анимациями и формой заявки в Telegram.</p>
+        <button class="more" data-id="site1">Подробнее →</button>
+      </div>
+    </article>
+
+    <article class="card tilt reveal" data-cat="site">
+      <div class="card-img img-site-2"><div class="img-tag">WEB</div></div>
+      <div class="card-body">
+        <h3>Корпоративный сайт</h3>
+        <p>Многостраничник с CMS для контента и блогом на Markdown.</p>
+        <button class="more" data-id="site2">Подробнее →</button>
+      </div>
+    </article>
+
+    <article class="card tilt reveal" data-cat="site">
+      <div class="card-img img-site-3"><div class="img-tag">WEB</div></div>
+      <div class="card-body">
+        <h3>Сайт-визитка</h3>
+        <p>Минимализм, скорость и адаптив для персонального бренда.</p>
+        <button class="more" data-id="site3">Подробнее →</button>
+      </div>
+    </article>
+
+    <article class="card tilt reveal" data-cat="mini">
+      <div class="card-img img-mini-1"><div class="img-tag">MINI</div></div>
+      <div class="card-body">
+        <h3>Mini App — Каталог</h3>
+        <p>Интернет-магазин внутри Telegram с WebApp API и оплатой.</p>
+        <button class="more" data-id="mini1">Подробнее →</button>
+      </div>
+    </article>
+
+    <article class="card tilt reveal" data-cat="mini">
+      <div class="card-img img-mini-2"><div class="img-tag">MINI</div></div>
+      <div class="card-body">
+        <h3>Mini App — Бронирование</h3>
+        <p>Запись на услуги с выбором даты, времени и подтверждением.</p>
+        <button class="more" data-id="mini2">Подробнее →</button>
+      </div>
+    </article>
+
+    <article class="card tilt reveal" data-cat="mini">
+      <div class="card-img img-mini-3"><div class="img-tag">MINI</div></div>
+      <div class="card-body">
+        <h3>Mini App — Игра</h3>
+        <p>Лёгкая игра с рейтингом игроков и интеграцией Telegram Stars.</p>
+        <button class="more" data-id="mini3">Подробнее →</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="section reviews">
+  <div class="section-head">
+    <span class="sec-num">03</span>
+    <h2 class="sec-title reveal">Отзывы</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="reviews-track">
+    <div class="reviews-row">
+      <div class="review reveal">
+        <p>«Сделал бота под мой бизнес за 3 дня, всё работает отлично!»</p>
+        <div class="author"><span class="avatar">А</span><span>Алексей М.<br><i>Владелец магазина</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Крутой лендинг, клиенты говорят что нравится дизайн.»</p>
+        <div class="author"><span class="avatar">М</span><span>Марина К.<br><i>SMM-специалист</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Разобрался в моей задаче быстро, рекомендую.»</p>
+        <div class="author"><span class="avatar">Д</span><span>Дмитрий Н.<br><i>Предприниматель</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Mini App получилось лучше, чем я представляла. Заявок стало вдвое больше.»</p>
+        <div class="author"><span class="avatar">Е</span><span>Екатерина В.<br><i>Салон красоты</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«На связи постоянно, правки вносит быстро. Работать комфортно.»</p>
+        <div class="author"><span class="avatar">И</span><span>Игорь П.<br><i>Стартап-фаундер</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Бот-помощник снял с меня кучу рутины. Очень доволен.»</p>
+        <div class="author"><span class="avatar">С</span><span>Сергей Т.<br><i>Автосервис</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Запустили сайт за неделю, всё по ТЗ и даже чуть лучше.»</p>
+        <div class="author"><span class="avatar">О</span><span>Ольга Р.<br><i>Маркетолог</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Честно, качественно, без воды. Ещё обратимся.»</p>
+        <div class="author"><span class="avatar">П</span><span>Павел Ж.<br><i>Агентство</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Сделал бота для кафе — приём заказов, рассылки акций. Довольны и мы, и гости.»</p>
+        <div class="author"><span class="avatar">Н</span><span>Никита Ф.<br><i>Ресторатор</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Запустили Mini App для записи в студию — удобно, клиенты сами выбирают время.»</p>
+        <div class="author"><span class="avatar">А</span><span>Анна Л.<br><i>Йога-студия</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Профессионал. Учёл все нюансы, подсказал, как сделать лучше, чем я предлагал.»</p>
+        <div class="author"><span class="avatar">Р</span><span>Руслан Б.<br><i>Онлайн-школа</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Заказывал лендинг под рекламу — конверсия оказалась выше прошлого в два раза.»</p>
+        <div class="author"><span class="avatar">В</span><span>Виктор С.<br><i>Арбитражник</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Сделал бота для приёма отзывов, всё работает как часы. Спасибо!»</p>
+        <div class="author"><span class="avatar">Т</span><span>Татьяна Г.<br><i>Event-агентство</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Адекватный разработчик, редкое явление. Буду рекомендовать знакомым.»</p>
+        <div class="author"><span class="avatar">К</span><span>Кирилл Х.<br><i>Digital-маркетолог</i></span></div>
+      </div>
+      <div class="review reveal">
+        <p>«Переделал мой старый сайт под мобильные — теперь не стыдно делиться ссылкой.»</p>
+        <div class="author"><span class="avatar">Ю</span><span>Юлия А.<br><i>Коуч</i></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="section-head">
+    <span class="sec-num">04</span>
+    <h2 class="sec-title reveal">Связь</h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="contact-wrap">
+    <div class="contact-intro reveal">
+      <h3>Опишите задачу — отвечу быстро.</h3>
+    </div>
+
+    <form id="contact-form" class="contact-form reveal" novalidate>
+      <div class="field">
+        <textarea name="message" id="f-msg" rows="6" required></textarea>
+        <label for="f-msg">Сообщение</label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-submit">
+        <span class="btn-label">Отправить сообщение</span>
+        <span class="btn-loader"></span>
+      </button>
+      <div class="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© <span id="year"></span> Horshevsky · Сделано с кодом и кофе</div>
+  <div class="foot-right">design + dev · <span class="blink">_</span></div>
+</footer>
+
+</main>
+
+<!-- Portfolio modal -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close aria-label="Закрыть">×</button>
+    <h3 class="modal-title"></h3>
+    <p class="modal-text"></p>
+    <div class="modal-tags"></div>
+  </div>
+</div>
+
+<!-- Libs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- App -->
+<script src="scripts/config.js"></script>
+<script src="scripts/cursor.js"></script>
+<script src="scripts/three-bg.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/animations.js"></script>
+<script src="scripts/portfolio.js"></script>
+<script src="scripts/form.js"></script>
+
+</body>
+</html>
