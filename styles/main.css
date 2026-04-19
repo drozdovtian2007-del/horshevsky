@@ -11,7 +11,7 @@
   --accent-glow: rgba(65, 105, 225, .45);
   --line: rgba(255, 255, 255, .08);
   --radius: 14px;
-  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-sans: 'JetBrains Mono', ui-monospace, monospace;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   --ease: cubic-bezier(.2, .8, .2, 1);
 }
@@ -21,8 +21,8 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-sans);
-  font-weight: 300;
-  line-height: 1.55;
+  font-weight: 400;
+  line-height: 1.6;
   overflow-x: hidden;
   cursor: none;
 }

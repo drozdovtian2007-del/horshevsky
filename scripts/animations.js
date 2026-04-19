@@ -12,10 +12,14 @@
   }, { threshold: 0.05, rootMargin: '50px 0px 50px 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // Hard fallback: reveal everything after 2.5s in case IO never fires
+  // Hard fallback: reveal everything after 2s — also clear any GSAP inline opacity
   setTimeout(() => {
-    document.querySelectorAll('.reveal:not(.in)').forEach(el => el.classList.add('in'));
-  }, 2500);
+    document.querySelectorAll('.reveal:not(.in)').forEach(el => {
+      el.style.opacity = '';
+      el.style.transform = '';
+      el.classList.add('in');
+    });
+  }, 2000);
 
   if (prefersReduced || typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
   gsap.registerPlugin(ScrollTrigger);
@@ -35,13 +39,17 @@
     stagger: .06, duration: .7, ease: 'power3.out'
   });
 
-  // Portfolio cards — 3D flip-in
+  // Portfolio cards — 3D fly-in (clearProps ensures no leftover inline styles)
   gsap.utils.toArray('.card').forEach((el, i) => {
-    gsap.from(el, {
-      scrollTrigger: { trigger: el, start: 'top 90%' },
-      y: 60, opacity: 0, rotateY: 20,
-      delay: (i % 3) * 0.08, duration: .8, ease: 'power3.out'
-    });
+    gsap.fromTo(el,
+      { y: 60, opacity: 0, rotateY: 15 },
+      {
+        scrollTrigger: { trigger: el, start: 'top 92%' },
+        y: 0, opacity: 1, rotateY: 0,
+        delay: (i % 3) * 0.08, duration: .8, ease: 'power3.out',
+        clearProps: 'transform,opacity'
+      }
+    );
   });
 
   // Facts counter
