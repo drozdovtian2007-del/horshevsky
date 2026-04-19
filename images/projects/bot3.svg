@@ -1,28 +1,33 @@
 <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
-  <rect width="400" height="260" fill="#0d0d1a"/>
-  <rect x="55" y="8" width="290" height="244" rx="22" fill="#1a1a2e" stroke="#2a2a50" stroke-width="2"/>
-  <rect x="55" y="8" width="290" height="52" rx="22" fill="#3558c8"/>
-  <rect x="55" y="36" width="290" height="24" fill="#3558c8"/>
-  <circle cx="94" cy="34" r="16" fill="#5070e8"/>
-  <text x="94" y="39" text-anchor="middle" fill="white" font-size="14">📢</text>
-  <text x="120" y="30" fill="white" font-size="12" font-weight="600">NewsletterBot</text>
-  <text x="120" y="44" fill="#b8ccff" font-size="10">Панель управления</text>
+  <rect width="400" height="260" fill="#0c0a00"/>
+  <rect x="70" y="10" width="260" height="240" rx="16" fill="#1a1500" stroke="#3a2e00" stroke-width="1.5"/>
+  <!-- Header -->
+  <rect x="70" y="10" width="260" height="46" rx="16" fill="#2a1f00"/>
+  <rect x="70" y="36" width="260" height="20" fill="#2a1f00"/>
+  <text x="200" y="28" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="700">📢 NewsletterBot</text>
+  <text x="200" y="44" text-anchor="middle" fill="#92400e" font-size="9">Панель рассылок</text>
   <!-- Stats row -->
-  <rect x="68" y="70" width="80" height="62" rx="10" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
-  <text x="108" y="96" text-anchor="middle" fill="#6080f8" font-size="18" font-weight="700">1 247</text>
-  <text x="108" y="110" text-anchor="middle" fill="#8898cc" font-size="10">подписчиков</text>
-  <rect x="158" y="70" width="80" height="62" rx="10" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
-  <text x="198" y="96" text-anchor="middle" fill="#22c55e" font-size="18" font-weight="700">89%</text>
-  <text x="198" y="110" text-anchor="middle" fill="#8898cc" font-size="10">открываемость</text>
-  <rect x="248" y="70" width="80" height="62" rx="10" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
-  <text x="288" y="96" text-anchor="middle" fill="#f59e0b" font-size="18" font-weight="700">42</text>
-  <text x="288" y="110" text-anchor="middle" fill="#8898cc" font-size="10">рассылки</text>
-  <!-- Last broadcast -->
-  <rect x="68" y="143" width="260" height="55" rx="10" fill="#14162e" stroke="#2e3060" stroke-width="1"/>
-  <text x="84" y="162" fill="#8898cc" font-size="10">Последняя рассылка</text>
-  <text x="84" y="177" fill="white" font-size="11" font-weight="500">🎉 Акция — скидка 20% на всё</text>
-  <text x="84" y="190" fill="#6080f8" font-size="10">✓ 1 081 доставлено · 4 часа назад</text>
-  <!-- Send button -->
-  <rect x="68" y="208" width="260" height="36" rx="10" fill="#4169E1"/>
-  <text x="198" y="231" text-anchor="middle" fill="white" font-size="12" font-weight="600">✉  Новая рассылка</text>
+  <rect x="82" y="64" width="72" height="50" rx="10" fill="#1c1500" stroke="#3a2e00" stroke-width="1"/>
+  <text x="118" y="83" text-anchor="middle" fill="#fbbf24" font-size="16" font-weight="700">4 280</text>
+  <text x="118" y="96" text-anchor="middle" fill="#92400e" font-size="8">подписчиков</text>
+  <text x="118" y="108" text-anchor="middle" fill="#6b7280" font-size="7">▲ +120 за неделю</text>
+  <rect x="164" y="64" width="72" height="50" rx="10" fill="#1c1500" stroke="#3a2e00" stroke-width="1"/>
+  <text x="200" y="83" text-anchor="middle" fill="#34d399" font-size="16" font-weight="700">68%</text>
+  <text x="200" y="96" text-anchor="middle" fill="#92400e" font-size="8">open rate</text>
+  <text x="200" y="108" text-anchor="middle" fill="#6b7280" font-size="7">▲ +5% к прошлой</text>
+  <rect x="246" y="64" width="72" height="50" rx="10" fill="#1c1500" stroke="#3a2e00" stroke-width="1"/>
+  <text x="282" y="83" text-anchor="middle" fill="#f87171" font-size="16" font-weight="700">38</text>
+  <text x="282" y="96" text-anchor="middle" fill="#92400e" font-size="8">рассылок</text>
+  <text x="282" y="108" text-anchor="middle" fill="#6b7280" font-size="7">за этот месяц</text>
+  <!-- Recent newsletters -->
+  <text x="82" y="132" fill="#fbbf24" font-size="9" font-weight="600">Последние рассылки</text>
+  <rect x="82" y="140" width="236" height="28" rx="7" fill="#1c1500" stroke="#3a2e00" stroke-width="1"/>
+  <text x="94" y="158" fill="#f1f5f9" font-size="9">🟢  Акция — скидка 30%</text>
+  <text x="302" y="158" text-anchor="end" fill="#6b7280" font-size="8">4 280 / 68%</text>
+  <rect x="82" y="174" width="236" height="28" rx="7" fill="#1c1500" stroke="#3a2e00" stroke-width="1"/>
+  <text x="94" y="192" fill="#f1f5f9" font-size="9">🟢  Новые поступления</text>
+  <text x="302" y="192" text-anchor="end" fill="#6b7280" font-size="8">4 100 / 61%</text>
+  <rect x="82" y="208" width="236" height="28" rx="7" fill="#1c1500" stroke="#3a2e00" stroke-width="1"/>
+  <text x="94" y="226" fill="#94a3b8" font-size="9">⏸  Черновик — A/B тест</text>
+  <text x="302" y="226" text-anchor="end" fill="#6b7280" font-size="8">— / —</text>
 </svg>

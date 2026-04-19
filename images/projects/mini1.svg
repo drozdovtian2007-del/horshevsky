@@ -1,35 +1,35 @@
 <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
-  <rect width="400" height="260" fill="#0d0d1a"/>
-  <rect x="55" y="8" width="290" height="244" rx="22" fill="#1a1a2e" stroke="#2a2a50" stroke-width="2"/>
-  <!-- Mini App header bar -->
-  <rect x="55" y="8" width="290" height="42" rx="22" fill="#1a1a2e"/>
-  <rect x="55" y="30" width="290" height="20" fill="#1a1a2e"/>
-  <text x="200" y="34" text-anchor="middle" fill="#8898cc" font-size="10">◀  TechShop Mini App</text>
-  <line x1="55" y1="50" x2="345" y2="50" stroke="#2a2a50" stroke-width="1"/>
+  <rect width="400" height="260" fill="#011c11"/>
+  <rect x="110" y="4" width="180" height="252" rx="20" fill="#041f12" stroke="#064e2e" stroke-width="1.5"/>
+  <!-- Header -->
+  <rect x="110" y="28" width="180" height="36" fill="#052e1a"/>
+  <text x="150" y="36" fill="#6b7280" font-size="7">◀ назад</text>
+  <text x="200" y="50" text-anchor="middle" fill="#10b981" font-size="11" font-weight="700">🛍 GreenShop</text>
   <!-- Search bar -->
-  <rect x="68" y="58" width="190" height="26" rx="8" fill="#12122a" stroke="#2a2a50" stroke-width="1"/>
-  <text x="82" y="75" fill="#5a6a9a" font-size="11">🔍  Поиск...</text>
-  <rect x="264" y="58" width="58" height="26" rx="8" fill="#4169E1"/>
-  <text x="293" y="75" text-anchor="middle" fill="white" font-size="10" font-weight="600">Фильтр</text>
-  <!-- Product grid 2x2 -->
-  <rect x="68" y="92" width="106" height="72" rx="8" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
-  <rect x="68" y="92" width="106" height="44" rx="8" fill="#252850"/>
-  <text x="121" y="120" text-anchor="middle" font-size="24">⌚</text>
-  <text x="121" y="149" text-anchor="middle" fill="white" font-size="10">Смарт-часы</text>
-  <text x="121" y="160" text-anchor="middle" fill="#6080f8" font-size="10" font-weight="600">8 990 ₽</text>
-  <rect x="182" y="92" width="106" height="72" rx="8" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
-  <rect x="182" y="92" width="106" height="44" rx="8" fill="#252850"/>
-  <text x="235" y="120" text-anchor="middle" font-size="24">🎧</text>
-  <text x="235" y="149" text-anchor="middle" fill="white" font-size="10">Наушники</text>
-  <text x="235" y="160" text-anchor="middle" fill="#6080f8" font-size="10" font-weight="600">3 490 ₽</text>
-  <rect x="68" y="172" width="106" height="72" rx="8" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
-  <rect x="68" y="172" width="106" height="44" rx="8" fill="#252850"/>
-  <text x="121" y="200" text-anchor="middle" font-size="24">📱</text>
-  <text x="121" y="229" text-anchor="middle" fill="white" font-size="10">Смартфон</text>
-  <text x="121" y="240" text-anchor="middle" fill="#6080f8" font-size="10" font-weight="600">24 990 ₽</text>
-  <rect x="182" y="172" width="106" height="72" rx="8" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
-  <rect x="182" y="172" width="106" height="44" rx="8" fill="#252850"/>
-  <text x="235" y="200" text-anchor="middle" font-size="24">💻</text>
-  <text x="235" y="229" text-anchor="middle" fill="white" font-size="10">Ноутбук</text>
-  <text x="235" y="240" text-anchor="middle" fill="#6080f8" font-size="10" font-weight="600">54 990 ₽</text>
+  <rect x="118" y="72" width="162" height="22" rx="11" fill="#052e1a" stroke="#064e2e" stroke-width="1"/>
+  <text x="199" y="87" text-anchor="middle" fill="#6b7280" font-size="9">🔍 Найти товар...</text>
+  <!-- Category tabs -->
+  <rect x="118" y="102" width="50" height="16" rx="8" fill="#059669"/>
+  <text x="143" y="114" text-anchor="middle" fill="#fff" font-size="7" font-weight="600">Все</text>
+  <rect x="174" y="102" width="50" height="16" rx="8" fill="#052e1a"/>
+  <text x="199" y="114" text-anchor="middle" fill="#6b7280" font-size="7">Косметика</text>
+  <rect x="230" y="102" width="50" height="16" rx="8" fill="#052e1a"/>
+  <text x="255" y="114" text-anchor="middle" fill="#6b7280" font-size="7">Уход</text>
+  <!-- Products 2x2 -->
+  <rect x="118" y="126" width="74" height="56" rx="10" fill="#052e1a" stroke="#064e2e" stroke-width="1"/>
+  <text x="155" y="150" text-anchor="middle" font-size="20">🌿</text>
+  <text x="155" y="163" text-anchor="middle" fill="#f1f5f9" font-size="7">Сыворотка</text>
+  <text x="155" y="174" text-anchor="middle" fill="#10b981" font-size="8" font-weight="700">890 ₽</text>
+  <rect x="200" y="126" width="74" height="56" rx="10" fill="#052e1a" stroke="#064e2e" stroke-width="1"/>
+  <text x="237" y="150" text-anchor="middle" font-size="20">🧴</text>
+  <text x="237" y="163" text-anchor="middle" fill="#f1f5f9" font-size="7">Крем</text>
+  <text x="237" y="174" text-anchor="middle" fill="#10b981" font-size="8" font-weight="700">1 290 ₽</text>
+  <rect x="118" y="190" width="74" height="56" rx="10" fill="#052e1a" stroke="#064e2e" stroke-width="1"/>
+  <text x="155" y="214" text-anchor="middle" font-size="20">🌸</text>
+  <text x="155" y="227" text-anchor="middle" fill="#f1f5f9" font-size="7">Масло</text>
+  <text x="155" y="238" text-anchor="middle" fill="#10b981" font-size="8" font-weight="700">650 ₽</text>
+  <rect x="200" y="190" width="74" height="56" rx="10" fill="#052e1a" stroke="#064e2e" stroke-width="1"/>
+  <text x="237" y="214" text-anchor="middle" font-size="20">🧪</text>
+  <text x="237" y="227" text-anchor="middle" fill="#f1f5f9" font-size="7">Тоник</text>
+  <text x="237" y="238" text-anchor="middle" fill="#10b981" font-size="8" font-weight="700">490 ₽</text>
 </svg>

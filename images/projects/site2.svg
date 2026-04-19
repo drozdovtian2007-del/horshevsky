@@ -1,50 +1,49 @@
 <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
-  <rect width="400" height="260" fill="#0d0d1a"/>
-  <rect x="20" y="10" width="360" height="240" rx="12" fill="#1a1a2e" stroke="#2a2a50" stroke-width="1.5"/>
-  <rect x="20" y="10" width="360" height="32" rx="12" fill="#12122a"/>
-  <rect x="20" y="30" width="360" height="12" fill="#12122a"/>
-  <circle cx="40" cy="26" r="5" fill="#ff5f56"/>
-  <circle cx="58" cy="26" r="5" fill="#ffbd2e"/>
-  <circle cx="76" cy="26" r="5" fill="#27c93f"/>
-  <rect x="100" y="18" width="200" height="16" rx="8" fill="#1e203c"/>
-  <text x="200" y="30" text-anchor="middle" fill="#5a6a9a" font-size="9">techcorp.ru</text>
-  <!-- Nav -->
-  <rect x="20" y="42" width="360" height="28" fill="#0f1228"/>
-  <text x="44" y="61" fill="white" font-size="12" font-weight="700">TechCorp</text>
-  <text x="140" y="61" fill="#8898cc" font-size="10">О нас</text>
-  <text x="180" y="61" fill="#8898cc" font-size="10">Услуги</text>
-  <text x="225" y="61" fill="#8898cc" font-size="10">Команда</text>
-  <text x="275" y="61" fill="#8898cc" font-size="10">Блог</text>
-  <rect x="315" y="52" width="52" height="18" rx="5" fill="#4169E1"/>
-  <text x="341" y="65" text-anchor="middle" fill="white" font-size="9" font-weight="600">Контакт</text>
-  <!-- Sidebar + content -->
-  <rect x="20" y="70" width="80" height="180" fill="#0f1020"/>
-  <rect x="28" y="82" width="64" height="22" rx="6" fill="#1e2a5a"/>
-  <text x="60" y="97" text-anchor="middle" fill="#6080f8" font-size="9">🏠 Главная</text>
-  <rect x="28" y="110" width="64" height="22" rx="6" fill="transparent"/>
-  <text x="60" y="125" text-anchor="middle" fill="#6a7a9a" font-size="9">📦 Услуги</text>
-  <rect x="28" y="138" width="64" height="22" rx="6" fill="transparent"/>
-  <text x="60" y="153" text-anchor="middle" fill="#6a7a9a" font-size="9">👥 Команда</text>
-  <rect x="28" y="166" width="64" height="22" rx="6" fill="transparent"/>
-  <text x="60" y="181" text-anchor="middle" fill="#6a7a9a" font-size="9">📝 Блог</text>
-  <!-- Content area -->
-  <rect x="108" y="78" width="260" height="30" rx="6" fill="#1a1a3a"/>
-  <text x="120" y="98" fill="white" font-size="13" font-weight="600">Наши услуги</text>
-  <rect x="108" y="116" width="78" height="70" rx="8" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
-  <text x="147" y="148" text-anchor="middle" font-size="22">💻</text>
-  <text x="147" y="163" text-anchor="middle" fill="white" font-size="9">Разработка</text>
-  <text x="147" y="175" text-anchor="middle" fill="#6080f8" font-size="9">от 15 000 ₽</text>
-  <rect x="196" y="116" width="78" height="70" rx="8" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
-  <text x="235" y="148" text-anchor="middle" font-size="22">📱</text>
-  <text x="235" y="163" text-anchor="middle" fill="white" font-size="9">Мобильные</text>
-  <text x="235" y="175" text-anchor="middle" fill="#6080f8" font-size="9">от 30 000 ₽</text>
-  <rect x="284" y="116" width="78" height="70" rx="8" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
-  <text x="323" y="148" text-anchor="middle" font-size="22">🎨</text>
-  <text x="323" y="163" text-anchor="middle" fill="white" font-size="9">Дизайн</text>
-  <text x="323" y="175" text-anchor="middle" fill="#6080f8" font-size="9">от 8 000 ₽</text>
+  <rect width="400" height="260" fill="#f8fafc"/>
+  <!-- Browser -->
+  <rect width="400" height="28" fill="#e8ecf0"/>
+  <circle cx="16" cy="14" r="5" fill="#ff5f57"/>
+  <circle cx="30" cy="14" r="5" fill="#febc2e"/>
+  <circle cx="44" cy="14" r="5" fill="#28c840"/>
+  <rect x="70" y="8" width="260" height="14" rx="7" fill="#d0d5dd"/>
+  <text x="200" y="19" text-anchor="middle" fill="#888" font-size="8">techcorp.ru</text>
+  <!-- Sidebar -->
+  <rect x="0" y="28" width="90" height="232" fill="#0f172a"/>
+  <text x="45" y="52" text-anchor="middle" fill="#38bdf8" font-size="10" font-weight="700">TechCorp</text>
+  <line x1="12" y1="60" x2="78" y2="60" stroke="#1e293b" stroke-width="1"/>
+  <rect x="8" y="68" width="74" height="20" rx="5" fill="#1e3a5f"/>
+  <text x="45" y="82" text-anchor="middle" fill="#38bdf8" font-size="8">🏠 Главная</text>
+  <text x="45" y="104" text-anchor="middle" fill="#94a3b8" font-size="8">⚙️ Услуги</text>
+  <text x="45" y="124" text-anchor="middle" fill="#94a3b8" font-size="8">📂 Проекты</text>
+  <text x="45" y="144" text-anchor="middle" fill="#94a3b8" font-size="8">✍️ Блог</text>
+  <text x="45" y="164" text-anchor="middle" fill="#94a3b8" font-size="8">👥 Команда</text>
+  <text x="45" y="184" text-anchor="middle" fill="#94a3b8" font-size="8">📞 Контакты</text>
+  <!-- Main content -->
+  <rect x="90" y="28" width="310" height="232" fill="#f8fafc"/>
+  <!-- Top bar -->
+  <rect x="90" y="28" width="310" height="36" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="110" y="51" fill="#1e293b" font-size="11" font-weight="600">Добро пожаловать!</text>
+  <rect x="340" y="35" width="48" height="20" rx="10" fill="#0ea5e9"/>
+  <text x="364" y="49" text-anchor="middle" fill="#fff" font-size="8" font-weight="600">+ Создать</text>
+  <!-- Service cards -->
+  <rect x="100" y="75" width="88" height="70" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="144" y="100" text-anchor="middle" font-size="22">⚡</text>
+  <text x="144" y="116" text-anchor="middle" fill="#0f172a" font-size="8" font-weight="600">Разработка</text>
+  <text x="144" y="128" text-anchor="middle" fill="#94a3b8" font-size="7">12 проектов</text>
+  <rect x="198" y="75" width="88" height="70" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="242" y="100" text-anchor="middle" font-size="22">🎯</text>
+  <text x="242" y="116" text-anchor="middle" fill="#0f172a" font-size="8" font-weight="600">Маркетинг</text>
+  <text x="242" y="128" text-anchor="middle" fill="#94a3b8" font-size="7">8 проектов</text>
+  <rect x="296" y="75" width="88" height="70" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="340" y="100" text-anchor="middle" font-size="22">☁️</text>
+  <text x="340" y="116" text-anchor="middle" fill="#0f172a" font-size="8" font-weight="600">Облако</text>
+  <text x="340" y="128" text-anchor="middle" fill="#94a3b8" font-size="7">5 проектов</text>
   <!-- Blog preview -->
-  <rect x="108" y="195" width="260" height="45" rx="8" fill="#14162e" stroke="#2e3060" stroke-width="1"/>
-  <text x="120" y="212" fill="#8898cc" font-size="9">Последняя статья</text>
-  <text x="120" y="226" fill="white" font-size="11">Как выбрать стек для стартапа в 2024</text>
-  <text x="120" y="236" fill="#6080f8" font-size="9">Читать →</text>
+  <text x="100" y="163" fill="#64748b" font-size="9" font-weight="600">Последние статьи</text>
+  <rect x="100" y="170" width="288" height="32" rx="7" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="112" y="189" fill="#0f172a" font-size="9">Как мы автоматизировали 80% рутины за 2 месяца</text>
+  <text x="376" y="189" text-anchor="end" fill="#94a3b8" font-size="7">14 апр</text>
+  <rect x="100" y="208" width="288" height="32" rx="7" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="112" y="227" fill="#0f172a" font-size="9">Запустили новый корпоративный портал</text>
+  <text x="376" y="227" text-anchor="end" fill="#94a3b8" font-size="7">2 апр</text>
 </svg>

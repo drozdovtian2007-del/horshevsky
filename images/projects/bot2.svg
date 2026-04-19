@@ -1,28 +1,24 @@
 <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
-  <rect width="400" height="260" fill="#0d0d1a"/>
-  <rect x="55" y="8" width="290" height="244" rx="22" fill="#1a1a2e" stroke="#2a2a50" stroke-width="2"/>
-  <rect x="55" y="8" width="290" height="52" rx="22" fill="#3558c8"/>
-  <rect x="55" y="36" width="290" height="24" fill="#3558c8"/>
-  <circle cx="94" cy="34" r="16" fill="#5070e8" opacity=".9"/>
-  <text x="94" y="39" text-anchor="middle" fill="white" font-size="14">🤖</text>
-  <text x="120" y="30" fill="white" font-size="12" font-weight="600">Support Bot</text>
-  <text x="120" y="44" fill="#b8ccff" font-size="10">● онлайн</text>
-  <!-- Bot message bubble -->
-  <rect x="70" y="70" width="210" height="56" rx="12" fill="#252850"/>
-  <rect x="70" y="70" width="8" height="56" rx="4" fill="#4169E1"/>
-  <text x="90" y="88" fill="white" font-size="11">Привет! Чем могу помочь?</text>
-  <text x="90" y="105" fill="#8898cc" font-size="10">Выберите категорию:</text>
-  <!-- Action buttons -->
-  <rect x="70" y="137" width="118" height="32" rx="8" fill="#1e3a8a" stroke="#4169E1" stroke-width="1"/>
-  <text x="129" y="158" text-anchor="middle" fill="#91b4ff" font-size="11">📋  Оставить заявку</text>
-  <rect x="198" y="137" width="118" height="32" rx="8" fill="#1e3a8a" stroke="#4169E1" stroke-width="1"/>
-  <text x="257" y="158" text-anchor="middle" fill="#91b4ff" font-size="11">❓  FAQ</text>
-  <rect x="70" y="179" width="118" height="32" rx="8" fill="#1e3a8a" stroke="#4169E1" stroke-width="1"/>
-  <text x="129" y="200" text-anchor="middle" fill="#91b4ff" font-size="11">📞  Позвонить</text>
-  <rect x="198" y="179" width="118" height="32" rx="8" fill="#1e3a8a" stroke="#4169E1" stroke-width="1"/>
-  <text x="257" y="200" text-anchor="middle" fill="#91b4ff" font-size="11">🕐  Часы работы</text>
-  <!-- Status bar -->
-  <rect x="70" y="222" width="246" height="22" rx="8" fill="#0e1428"/>
-  <circle cx="86" cy="233" r="5" fill="#22c55e"/>
-  <text x="96" y="237" fill="#8898cc" font-size="10">Отвечаем в течение 5 минут</text>
+  <rect width="400" height="260" fill="#0f0a1e"/>
+  <rect x="110" y="4" width="180" height="252" rx="20" fill="#1a1030" stroke="#3a2a60" stroke-width="1.5"/>
+  <text x="125" y="22" fill="#6b7280" font-size="8">9:41</text>
+  <rect x="110" y="28" width="180" height="36" fill="#221540"/>
+  <text x="140" y="50" fill="#a78bfa" font-size="16">🤖</text>
+  <text x="210" y="44" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="600">SupportBot</text>
+  <text x="210" y="57" text-anchor="middle" fill="#a78bfa" font-size="8">● на связи 24/7</text>
+  <!-- Chat bubble incoming -->
+  <rect x="118" y="72" width="130" height="30" rx="12" fill="#2d1f50"/>
+  <text x="183" y="91" text-anchor="middle" fill="#e2e8f0" font-size="9">Здравствуйте! Чем помочь?</text>
+  <!-- Menu buttons -->
+  <rect x="118" y="110" width="162" height="22" rx="8" fill="#3730a3"/>
+  <text x="199" y="125" text-anchor="middle" fill="#c4b5fd" font-size="9">📋 Статус заказа</text>
+  <rect x="118" y="138" width="162" height="22" rx="8" fill="#1e1b4b"/>
+  <text x="199" y="153" text-anchor="middle" fill="#a78bfa" font-size="9">❓ Частые вопросы</text>
+  <rect x="118" y="166" width="162" height="22" rx="8" fill="#1e1b4b"/>
+  <text x="199" y="181" text-anchor="middle" fill="#a78bfa" font-size="9">👤 Связаться с менеджером</text>
+  <rect x="118" y="194" width="162" height="22" rx="8" fill="#1e1b4b"/>
+  <text x="199" y="209" text-anchor="middle" fill="#a78bfa" font-size="9">🔄 Возврат / обмен</text>
+  <!-- Chat bubble outgoing -->
+  <rect x="148" y="222" width="112" height="22" rx="10" fill="#4c1d95"/>
+  <text x="204" y="237" text-anchor="middle" fill="#fff" font-size="9">Статус заказа #4821</text>
 </svg>

@@ -1,40 +1,47 @@
 <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
-  <rect width="400" height="260" fill="#0d0d1a"/>
-  <rect x="55" y="8" width="290" height="244" rx="22" fill="#1a1a2e" stroke="#2a2a50" stroke-width="2"/>
-  <rect x="55" y="8" width="290" height="42" rx="22" fill="#1a1a2e"/>
-  <rect x="55" y="30" width="290" height="20" fill="#1a1a2e"/>
-  <text x="200" y="34" text-anchor="middle" fill="#8898cc" font-size="10">◀  CryptoRun</text>
-  <line x1="55" y1="50" x2="345" y2="50" stroke="#2a2a50" stroke-width="1"/>
-  <!-- Game area -->
-  <rect x="68" y="58" width="260" height="80" rx="10" fill="#0a0a20" stroke="#2a2a4a" stroke-width="1"/>
-  <!-- Stars bg -->
-  <circle cx="90" cy="70" r="1" fill="white" opacity=".5"/>
-  <circle cx="150" cy="78" r="1.5" fill="white" opacity=".6"/>
-  <circle cx="220" cy="65" r="1" fill="white" opacity=".4"/>
-  <circle cx="290" cy="75" r="1" fill="white" opacity=".5"/>
-  <circle cx="310" cy="92" r="1" fill="white" opacity=".3"/>
-  <!-- Runner (simple pixel art vibe) -->
-  <circle cx="140" cy="108" r="10" fill="#4169E1"/>
-  <text x="140" y="113" text-anchor="middle" fill="white" font-size="12">🏃</text>
-  <!-- Score -->
-  <text x="200" y="82" text-anchor="middle" fill="#f59e0b" font-size="18" font-weight="700">24 680</text>
-  <text x="200" y="96" text-anchor="middle" fill="#8898cc" font-size="10">очков · уровень 7</text>
-  <!-- Stars bar -->
-  <text x="200" y="124" text-anchor="middle" fill="#f59e0b" font-size="12">★★★★☆  ×  84</text>
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0f0a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#sky)"/>
+  <rect x="110" y="4" width="180" height="252" rx="20" fill="#070718" stroke="#1a1060" stroke-width="1.5"/>
+  <!-- Status -->
+  <text x="125" y="22" fill="#475569" font-size="8">9:41</text>
+  <!-- Game header -->
+  <rect x="110" y="28" width="180" height="36" fill="#0e0a30"/>
+  <text x="200" y="50" text-anchor="middle" fill="#f59e0b" font-size="12" font-weight="700">⚡ CryptoRun</text>
+  <!-- Game canvas -->
+  <rect x="118" y="68" width="164" height="70" rx="8" fill="#04020f" stroke="#1a1060" stroke-width="1"/>
+  <!-- Neon floor -->
+  <line x1="118" y1="124" x2="282" y2="124" stroke="#4f46e5" stroke-width="2" opacity=".6"/>
+  <!-- Obstacles -->
+  <rect x="240" y="110" width="12" height="14" rx="2" fill="#ef4444"/>
+  <rect x="260" y="106" width="8" height="18" rx="2" fill="#ef4444" opacity=".7"/>
+  <!-- Runner -->
+  <circle cx="155" cy="114" r="9" fill="#4f46e5"/>
+  <text x="155" y="119" text-anchor="middle" fill="#fff" font-size="10">🏃</text>
+  <!-- Score display -->
+  <text x="200" y="84" text-anchor="middle" fill="#f59e0b" font-size="14" font-weight="700">24 680</text>
+  <text x="200" y="96" text-anchor="middle" fill="#6b7280" font-size="8">очков</text>
+  <!-- Stars -->
+  <text x="200" y="112" text-anchor="middle" fill="#f59e0b" font-size="10">★★★★☆  ×84</text>
   <!-- Leaderboard -->
-  <text x="68" y="150" fill="#8898cc" font-size="10">🏆  Таблица лидеров</text>
-  <rect x="68" y="156" width="260" height="26" rx="6" fill="#f59e0b" opacity=".15"/>
-  <text x="84" y="173" fill="#f59e0b" font-size="11" font-weight="700">1</text>
-  <text x="100" y="173" fill="white" font-size="11">CryptoKing</text>
-  <text x="310" y="173" text-anchor="end" fill="#f59e0b" font-size="11" font-weight="700">148 920</text>
-  <rect x="68" y="186" width="260" height="22" rx="6" fill="#1e203c"/>
-  <text x="84" y="201" fill="#8898cc" font-size="11">2</text>
-  <text x="100" y="201" fill="white" font-size="11">NightOwl99</text>
-  <text x="310" y="201" text-anchor="end" fill="#8898cc" font-size="11">87 440</text>
-  <rect x="68" y="212" width="260" height="22" rx="6" fill="#1e203c"/>
-  <text x="84" y="227" fill="#8898cc" font-size="11">3</text>
-  <text x="100" y="227" fill="white" font-size="11">SpeedRunner</text>
-  <text x="310" y="227" text-anchor="end" fill="#8898cc" font-size="11">62 180</text>
-  <!-- Stars buy button -->
-  <rect x="68" y="238" width="260" height="6" rx="3" fill="#4169E1" opacity=".4"/>
+  <text x="118" y="152" fill="#94a3b8" font-size="9" font-weight="600">🏆 Топ игроков</text>
+  <rect x="118" y="158" width="164" height="22" rx="6" fill="#f59e0b" opacity=".15"/>
+  <text x="130" y="173" fill="#f59e0b" font-size="10" font-weight="700">1</text>
+  <text x="146" y="173" fill="#fff" font-size="9">CryptoKing</text>
+  <text x="274" y="173" text-anchor="end" fill="#f59e0b" font-size="9" font-weight="700">148 920</text>
+  <rect x="118" y="184" width="164" height="20" rx="6" fill="#0e0a30"/>
+  <text x="130" y="198" fill="#6b7280" font-size="10">2</text>
+  <text x="146" y="198" fill="#e2e8f0" font-size="9">NightOwl99</text>
+  <text x="274" y="198" text-anchor="end" fill="#6b7280" font-size="9">87 440</text>
+  <rect x="118" y="208" width="164" height="20" rx="6" fill="#0e0a30"/>
+  <text x="130" y="222" fill="#6b7280" font-size="10">3</text>
+  <text x="146" y="222" fill="#e2e8f0" font-size="9">SpeedRunner</text>
+  <text x="274" y="222" text-anchor="end" fill="#6b7280" font-size="9">62 180</text>
+  <!-- Buy stars button -->
+  <rect x="118" y="234" width="164" height="16" rx="8" fill="#4f46e5" opacity=".5"/>
+  <text x="200" y="246" text-anchor="middle" fill="#c7d2fe" font-size="8">✦ Купить Stars</text>
 </svg>

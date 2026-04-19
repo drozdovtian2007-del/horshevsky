@@ -292,7 +292,8 @@ main { position: relative; z-index: 1; }
 .stack-card:hover { transform: translateY(-4px); border-color: var(--accent); }
 .stack-card:hover::before { opacity: 1; }
 .stack-ico { font-size: 26px; font-family: var(--font-mono); color: var(--accent); z-index: 1; }
-.stack-card span { font-size: 13px; color: var(--ink-dim); z-index: 1; }
+.stack-card span { font-size: 13px; color: var(--ink); font-weight: 500; z-index: 1; }
+.stack-sub { font-size: 10px !important; color: var(--ink-dim) !important; font-weight: 400 !important; margin-top: -4px; }
 
 /* ============ PORTFOLIO ============ */
 .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
@@ -471,10 +472,15 @@ main { position: relative; z-index: 1; }
   animation: modalIn .5s var(--ease);
 }
 .modal-close {
-  position: absolute; top: 10px; right: 14px;
-  font-size: 28px; color: var(--ink-dim); line-height: 1;
+  position: absolute; top: 14px; right: 14px;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: rgba(255,255,255,.06); border: 1px solid var(--line);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; color: var(--ink-dim); line-height: 1;
+  transition: background .2s, color .2s, transform .2s;
+  z-index: 10;
 }
-.modal-close:hover { color: #fff; }
+.modal-close:hover { background: rgba(65,105,225,.2); color: #fff; transform: rotate(90deg); }
 .modal-preview {
   width: 100%; aspect-ratio: 16/10; border-radius: 10px; overflow: hidden;
   margin-bottom: 24px; background: #0d0d1a; border: 1px solid var(--line);
@@ -505,7 +511,11 @@ main { position: relative; z-index: 1; }
 }
 .modal-cta:hover { opacity: .88; transform: translateY(-2px); }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes modalIn { from { opacity: 0; transform: translateY(20px) scale(.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes modalIn {
+  0%   { opacity: 0; transform: translateY(32px) scale(.92); }
+  60%  { opacity: 1; transform: translateY(-4px) scale(1.01); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
 
 /* ============ REVEAL ============ */
 .reveal { opacity: 0; transform: translateY(40px); }
