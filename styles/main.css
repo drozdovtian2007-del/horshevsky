@@ -137,6 +137,21 @@ body::after {
   .side-nav ul::before { display: none; }
 }
 
+/* ============ LANG TOGGLE ============ */
+.lang-toggle {
+  position: fixed; right: 18px; bottom: 28px; z-index: 50;
+  display: flex; gap: 2px;
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 8px; overflow: hidden;
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em;
+}
+.lang-toggle button {
+  padding: 7px 11px; color: var(--ink-dim);
+  transition: color .25s, background .25s;
+}
+.lang-toggle button.active { background: rgba(65,105,225,.18); color: var(--accent); }
+.lang-toggle button:hover:not(.active) { color: #fff; }
+
 /* ============ LOGO ============ */
 .logo {
   position: fixed; top: 26px; left: 28px; z-index: 50;
