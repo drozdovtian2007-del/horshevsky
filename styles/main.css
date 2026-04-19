@@ -276,11 +276,11 @@ main { position: relative; z-index: 1; }
 
 .stack { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .stack-card {
-  aspect-ratio: 1;
+  min-height: 96px;
   background: var(--panel); border: 1px solid var(--line);
   border-radius: 12px;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 8px; padding: 12px; text-align: center;
+  gap: 6px; padding: 14px 10px; text-align: center;
   transition: all .35s var(--ease);
   position: relative; overflow: hidden;
 }
@@ -293,7 +293,7 @@ main { position: relative; z-index: 1; }
 .stack-card:hover::before { opacity: 1; }
 .stack-ico { font-size: 26px; font-family: var(--font-mono); color: var(--accent); z-index: 1; }
 .stack-card span { font-size: 13px; color: var(--ink); font-weight: 500; z-index: 1; }
-.stack-sub { font-size: 10px !important; color: var(--ink-dim) !important; font-weight: 400 !important; margin-top: -4px; }
+.stack-sub { font-size: 9px !important; color: var(--ink-dim) !important; font-weight: 400 !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
 
 /* ============ PORTFOLIO ============ */
 .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
@@ -466,7 +466,8 @@ main { position: relative; z-index: 1; }
 .modal[aria-hidden="false"] { display: flex; animation: fadeIn .3s var(--ease); }
 .modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.7); backdrop-filter: blur(6px); }
 .modal-card {
-  position: relative; z-index: 2; width: min(520px, 100%);
+  position: relative; z-index: 2; width: min(720px, 94vw);
+  max-height: 90vh; overflow-y: auto;
   background: var(--panel); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 36px 32px;
   animation: modalIn .5s var(--ease);

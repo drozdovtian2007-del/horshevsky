@@ -1,40 +1,90 @@
-<svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
-  <rect width="400" height="260" fill="#0e1117"/>
-  <rect x="110" y="4" width="180" height="252" rx="20" fill="#1c1c2e" stroke="#2e2e4a" stroke-width="1.5"/>
-  <text x="125" y="22" fill="#6b7280" font-size="8">9:41</text>
-  <text x="268" y="22" fill="#6b7280" font-size="8">▐▐▐</text>
-  <rect x="110" y="28" width="180" height="36" fill="#17173a"/>
-  <text x="140" y="50" fill="#22c55e" font-size="16">🛒</text>
-  <text x="210" y="44" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="600">ShopBot</text>
-  <text x="210" y="57" text-anchor="middle" fill="#22c55e" font-size="8">● онлайн</text>
-  <rect x="118" y="72" width="76" height="72" rx="8" fill="#12122a" stroke="#2a2a4a" stroke-width="1"/>
-  <rect x="118" y="72" width="76" height="36" rx="8" fill="#1a2a1a"/>
-  <rect x="118" y="96" width="76" height="12" fill="#1a2a1a"/>
-  <text x="156" y="94" text-anchor="middle" font-size="18">👟</text>
-  <text x="156" y="116" text-anchor="middle" fill="#f1f5f9" font-size="8" font-weight="600">Кроссовки</text>
-  <text x="156" y="127" text-anchor="middle" fill="#22c55e" font-size="9" font-weight="700">2 490 ₽</text>
-  <text x="156" y="138" text-anchor="middle" fill="#6b7280" font-size="7">★ 4.8</text>
-  <rect x="204" y="72" width="76" height="72" rx="8" fill="#12122a" stroke="#2a2a4a" stroke-width="1"/>
-  <rect x="204" y="72" width="76" height="36" rx="8" fill="#1a1a2a"/>
-  <rect x="204" y="96" width="76" height="12" fill="#1a1a2a"/>
-  <text x="242" y="94" text-anchor="middle" font-size="18">🎒</text>
-  <text x="242" y="116" text-anchor="middle" fill="#f1f5f9" font-size="8" font-weight="600">Рюкзак</text>
-  <text x="242" y="127" text-anchor="middle" fill="#22c55e" font-size="9" font-weight="700">3 890 ₽</text>
-  <text x="242" y="138" text-anchor="middle" fill="#6b7280" font-size="7">★ 4.6</text>
-  <rect x="118" y="152" width="76" height="72" rx="8" fill="#12122a" stroke="#2a2a4a" stroke-width="1"/>
-  <rect x="118" y="152" width="76" height="36" rx="8" fill="#1a1520"/>
-  <rect x="118" y="176" width="76" height="12" fill="#1a1520"/>
-  <text x="156" y="174" text-anchor="middle" font-size="18">⌚</text>
-  <text x="156" y="196" text-anchor="middle" fill="#f1f5f9" font-size="8" font-weight="600">Часы</text>
-  <text x="156" y="207" text-anchor="middle" fill="#22c55e" font-size="9" font-weight="700">7 200 ₽</text>
-  <text x="156" y="218" text-anchor="middle" fill="#6b7280" font-size="7">★ 5.0</text>
-  <rect x="204" y="152" width="76" height="72" rx="8" fill="#12122a" stroke="#2a2a4a" stroke-width="1"/>
-  <rect x="204" y="152" width="76" height="36" rx="8" fill="#151a1a"/>
-  <rect x="204" y="176" width="76" height="12" fill="#151a1a"/>
-  <text x="242" y="174" text-anchor="middle" font-size="18">🕶️</text>
-  <text x="242" y="196" text-anchor="middle" fill="#f1f5f9" font-size="8" font-weight="600">Очки</text>
-  <text x="242" y="207" text-anchor="middle" fill="#22c55e" font-size="9" font-weight="700">1 150 ₽</text>
-  <text x="242" y="218" text-anchor="middle" fill="#6b7280" font-size="7">★ 4.7</text>
-  <rect x="118" y="232" width="162" height="18" rx="9" fill="#22c55e"/>
-  <text x="199" y="244" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">🛒 Корзина · 2 товара</text>
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,sans-serif">
+  <!-- Telegram dark background -->
+  <rect width="800" height="500" fill="#17212b"/>
+  <!-- Chat wallpaper dots -->
+  <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.03)"/>
+  </pattern>
+  <rect width="800" height="500" fill="url(#dots)"/>
+
+  <!-- Top header bar -->
+  <rect width="800" height="58" fill="#232e3c"/>
+  <rect width="800" height="1" y="58" fill="#1a2532"/>
+  <!-- Avatar -->
+  <circle cx="46" cy="29" r="18" fill="#0d6b3f"/>
+  <text x="46" y="35" text-anchor="middle" fill="white" font-size="15">S</text>
+  <!-- Bot info -->
+  <text x="74" y="23" fill="white" font-size="14" font-weight="600">ShopBot</text>
+  <circle cx="76" cy="35" r="4" fill="#4ade80"/>
+  <text x="86" y="39" fill="#7a9cbf" font-size="11">бот · онлайн</text>
+  <!-- Icons right -->
+  <text x="730" y="35" fill="#7a9cbf" font-size="18">🔍</text>
+  <text x="760" y="35" fill="#7a9cbf" font-size="18">⋮</text>
+
+  <!-- Date separator -->
+  <text x="400" y="85" text-anchor="middle" fill="#5c7a9b" font-size="11">Сегодня</text>
+
+  <!-- Bot message bubble 1 -->
+  <rect x="60" y="96" width="340" height="44" rx="10" fill="#182533"/>
+  <rect x="60" y="96" width="4" height="44" rx="2" fill="#1c9e68"/>
+  <text x="74" y="114" fill="#cdd8e3" font-size="13">Добро пожаловать в ShopBot! 🛒</text>
+  <text x="74" y="130" fill="#8ba3b8" font-size="11">Выберите категорию или товар ниже</text>
+
+  <!-- Product cards row -->
+  <!-- Card 1 -->
+  <rect x="60" y="150" width="150" height="180" rx="12" fill="#1e2d3d"/>
+  <rect x="60" y="150" width="150" height="100" rx="12" fill="#0d4a2f"/>
+  <rect x="60" y="220" width="150" height="30" fill="#0d4a2f"/>
+  <rect x="66" y="156" width="138" height="94" rx="8" fill="#0a5c38"/>
+  <!-- Product image placeholder with text -->
+  <text x="135" y="210" text-anchor="middle" fill="rgba(255,255,255,0.15)" font-size="36">👟</text>
+  <!-- Placeholder colored block instead -->
+  <rect x="72" y="162" width="126" height="82" rx="6" fill="#1a7a4f"/>
+  <text x="135" y="210" text-anchor="middle" fill="white" font-size="11" font-weight="600">Кроссовки Nike</text>
+  <text x="75" y="268" fill="white" font-size="12" font-weight="600">Кроссовки</text>
+  <text x="75" y="284" fill="#4ade80" font-size="13" font-weight="700">2 490 ₽</text>
+  <text x="75" y="300" fill="#8ba3b8" font-size="10">★★★★★ 4.8</text>
+  <rect x="75" y="310" width="120" height="14" rx="4" fill="#1c9e68"/>
+  <text x="135" y="321" text-anchor="middle" fill="white" font-size="9" font-weight="600">В КОРЗИНУ</text>
+
+  <!-- Card 2 -->
+  <rect x="224" y="150" width="150" height="180" rx="12" fill="#1e2d3d"/>
+  <rect x="224" y="150" width="150" height="100" rx="12" fill="#1a2a4a"/>
+  <rect x="224" y="220" width="150" height="30" fill="#1a2a4a"/>
+  <rect x="230" y="162" width="138" height="82" rx="6" fill="#243560"/>
+  <text x="299" y="210" text-anchor="middle" fill="rgba(255,255,255,0.15)" font-size="36">🎒</text>
+  <text x="299" y="210" text-anchor="middle" fill="white" font-size="11" font-weight="600">Рюкзак JD</text>
+  <text x="239" y="268" fill="white" font-size="12" font-weight="600">Рюкзак</text>
+  <text x="239" y="284" fill="#4ade80" font-size="13" font-weight="700">3 890 ₽</text>
+  <text x="239" y="300" fill="#8ba3b8" font-size="10">★★★★☆ 4.6</text>
+  <rect x="239" y="310" width="120" height="14" rx="4" fill="#1c9e68"/>
+  <text x="299" y="321" text-anchor="middle" fill="white" font-size="9" font-weight="600">В КОРЗИНУ</text>
+
+  <!-- Card 3 -->
+  <rect x="388" y="150" width="150" height="180" rx="12" fill="#1e2d3d"/>
+  <rect x="388" y="150" width="150" height="100" rx="12" fill="#2a1a3e"/>
+  <rect x="388" y="220" width="150" height="30" fill="#2a1a3e"/>
+  <rect x="394" y="162" width="138" height="82" rx="6" fill="#3d1f5c"/>
+  <text x="463" y="210" text-anchor="middle" fill="white" font-size="11" font-weight="600">Часы Smart</text>
+  <text x="403" y="268" fill="white" font-size="12" font-weight="600">Часы</text>
+  <text x="403" y="284" fill="#4ade80" font-size="13" font-weight="700">7 200 ₽</text>
+  <text x="403" y="300" fill="#8ba3b8" font-size="10">★★★★★ 5.0</text>
+  <rect x="403" y="310" width="120" height="14" rx="4" fill="#1c9e68"/>
+  <text x="463" y="321" text-anchor="middle" fill="white" font-size="9" font-weight="600">В КОРЗИНУ</text>
+
+  <!-- Bottom cart notification -->
+  <rect x="60" y="344" width="340" height="40" rx="10" fill="#1a3a2a" stroke="#1c9e68" stroke-width="1"/>
+  <text x="230" y="369" text-anchor="middle" fill="#4ade80" font-size="13" font-weight="600">🛒  Корзина · 2 товара · 6 380 ₽</text>
+
+  <!-- Keyboard buttons -->
+  <rect x="0" y="400" width="800" height="100" fill="#1c2733"/>
+  <rect x="0" y="400" width="800" height="1" fill="#1a2532"/>
+  <rect x="16" y="415" width="180" height="34" rx="8" fill="#2b3d4f"/>
+  <text x="106" y="437" text-anchor="middle" fill="#cdd8e3" font-size="13">📦 Мои заказы</text>
+  <rect x="210" y="415" width="180" height="34" rx="8" fill="#2b3d4f"/>
+  <text x="300" y="437" text-anchor="middle" fill="#cdd8e3" font-size="13">⭐ Избранное</text>
+  <rect x="404" y="415" width="180" height="34" rx="8" fill="#2b3d4f"/>
+  <text x="494" y="437" text-anchor="middle" fill="#cdd8e3" font-size="13">💬 Поддержка</text>
+  <rect x="16" y="455" width="568" height="34" rx="8" fill="#1c9e68"/>
+  <text x="300" y="477" text-anchor="middle" fill="white" font-size="13" font-weight="600">🛒  Перейти в корзину</text>
 </svg>

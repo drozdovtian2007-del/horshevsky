@@ -1,24 +1,45 @@
-<svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
-  <rect width="400" height="260" fill="#0f0a1e"/>
-  <rect x="110" y="4" width="180" height="252" rx="20" fill="#1a1030" stroke="#3a2a60" stroke-width="1.5"/>
-  <text x="125" y="22" fill="#6b7280" font-size="8">9:41</text>
-  <rect x="110" y="28" width="180" height="36" fill="#221540"/>
-  <text x="140" y="50" fill="#a78bfa" font-size="16">🤖</text>
-  <text x="210" y="44" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="600">SupportBot</text>
-  <text x="210" y="57" text-anchor="middle" fill="#a78bfa" font-size="8">● на связи 24/7</text>
-  <!-- Chat bubble incoming -->
-  <rect x="118" y="72" width="130" height="30" rx="12" fill="#2d1f50"/>
-  <text x="183" y="91" text-anchor="middle" fill="#e2e8f0" font-size="9">Здравствуйте! Чем помочь?</text>
-  <!-- Menu buttons -->
-  <rect x="118" y="110" width="162" height="22" rx="8" fill="#3730a3"/>
-  <text x="199" y="125" text-anchor="middle" fill="#c4b5fd" font-size="9">📋 Статус заказа</text>
-  <rect x="118" y="138" width="162" height="22" rx="8" fill="#1e1b4b"/>
-  <text x="199" y="153" text-anchor="middle" fill="#a78bfa" font-size="9">❓ Частые вопросы</text>
-  <rect x="118" y="166" width="162" height="22" rx="8" fill="#1e1b4b"/>
-  <text x="199" y="181" text-anchor="middle" fill="#a78bfa" font-size="9">👤 Связаться с менеджером</text>
-  <rect x="118" y="194" width="162" height="22" rx="8" fill="#1e1b4b"/>
-  <text x="199" y="209" text-anchor="middle" fill="#a78bfa" font-size="9">🔄 Возврат / обмен</text>
-  <!-- Chat bubble outgoing -->
-  <rect x="148" y="222" width="112" height="22" rx="10" fill="#4c1d95"/>
-  <text x="204" y="237" text-anchor="middle" fill="#fff" font-size="9">Статус заказа #4821</text>
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,sans-serif">
+  <rect width="800" height="500" fill="#17212b"/>
+  <pattern id="d2" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.03)"/>
+  </pattern>
+  <rect width="800" height="500" fill="url(#d2)"/>
+  <rect width="800" height="58" fill="#232e3c"/>
+  <rect width="800" height="1" y="58" fill="#1a2532"/>
+  <circle cx="46" cy="29" r="18" fill="#5b2bab"/>
+  <text x="46" y="35" text-anchor="middle" fill="white" font-size="15" font-weight="700">S</text>
+  <text x="74" y="23" fill="white" font-size="14" font-weight="600">SupportBot</text>
+  <circle cx="76" cy="35" r="4" fill="#4ade80"/>
+  <text x="86" y="39" fill="#7a9cbf" font-size="11">bot · online</text>
+  <text x="760" y="35" fill="#7a9cbf" font-size="18">⋮</text>
+  <text x="400" y="85" text-anchor="middle" fill="#5c7a9b" font-size="11">Today</text>
+  <rect x="60" y="96" width="380" height="64" rx="12" fill="#182533"/>
+  <text x="80" y="118" fill="#cdd8e3" font-size="14" font-weight="600">Hi! I'm your support assistant</text>
+  <text x="80" y="137" fill="#8ba3b8" font-size="12">Choose the topic you need help with:</text>
+  <text x="420" y="154" fill="#5c7a9b" font-size="10">09:14</text>
+  <rect x="60" y="176" width="185" height="52" rx="10" fill="#2b3d4f" stroke="#3d5269" stroke-width="1"/>
+  <text x="152" y="198" text-anchor="middle" fill="#9b6fd4" font-size="16">📋</text>
+  <text x="152" y="218" text-anchor="middle" fill="#cdd8e3" font-size="13" font-weight="500">Order Status</text>
+  <rect x="258" y="176" width="185" height="52" rx="10" fill="#2b3d4f" stroke="#3d5269" stroke-width="1"/>
+  <text x="350" y="198" text-anchor="middle" fill="#9b6fd4" font-size="16">❓</text>
+  <text x="350" y="218" text-anchor="middle" fill="#cdd8e3" font-size="13" font-weight="500">FAQ</text>
+  <rect x="60" y="238" width="185" height="52" rx="10" fill="#2b3d4f" stroke="#3d5269" stroke-width="1"/>
+  <text x="152" y="260" text-anchor="middle" fill="#9b6fd4" font-size="16">💬</text>
+  <text x="152" y="280" text-anchor="middle" fill="#cdd8e3" font-size="13" font-weight="500">Live Agent</text>
+  <rect x="258" y="238" width="185" height="52" rx="10" fill="#2b3d4f" stroke="#3d5269" stroke-width="1"/>
+  <text x="350" y="260" text-anchor="middle" fill="#9b6fd4" font-size="16">↩</text>
+  <text x="350" y="280" text-anchor="middle" fill="#cdd8e3" font-size="13" font-weight="500">Returns</text>
+  <rect x="480" y="306" width="240" height="36" rx="10" fill="#2b5278"/>
+  <text x="600" y="329" text-anchor="middle" fill="white" font-size="13">📋 Order Status</text>
+  <text x="730" y="340" fill="#5c7a9b" font-size="10">09:15 ✓✓</text>
+  <rect x="60" y="358" width="400" height="62" rx="12" fill="#182533"/>
+  <text x="80" y="380" fill="#cdd8e3" font-size="13">Enter your order number:</text>
+  <rect x="80" y="387" width="360" height="26" rx="6" fill="#1a2d3d" stroke="#3d5269" stroke-width="1"/>
+  <text x="90" y="405" fill="#5c7a9b" font-size="11">e.g. #12345</text>
+  <rect x="0" y="440" width="800" height="60" fill="#1c2733"/>
+  <rect x="0" y="440" width="800" height="1" fill="#1a2532"/>
+  <rect x="16" y="452" width="620" height="36" rx="18" fill="#2b3d4f"/>
+  <text x="36" y="475" fill="#5c7a9b" font-size="13">Message…</text>
+  <circle cx="680" cy="470" r="18" fill="#5b2bab"/>
+  <text x="680" y="476" text-anchor="middle" fill="white" font-size="16">↑</text>
 </svg>
