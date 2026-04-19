@@ -1,0 +1,32 @@
+<svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <rect width="400" height="260" fill="#0d0d1a"/>
+  <!-- Phone shell -->
+  <rect x="55" y="8" width="290" height="244" rx="22" fill="#1a1a2e" stroke="#2a2a50" stroke-width="2"/>
+  <!-- TG header -->
+  <rect x="55" y="8" width="290" height="52" rx="22" fill="#3558c8"/>
+  <rect x="55" y="36" width="290" height="24" fill="#3558c8"/>
+  <circle cx="94" cy="34" r="16" fill="#5070e8" opacity=".9"/>
+  <text x="94" y="39" text-anchor="middle" fill="white" font-size="14">🛒</text>
+  <text x="120" y="30" fill="white" font-size="12" font-weight="600">ShopBot</text>
+  <text x="120" y="44" fill="#b8ccff" font-size="10">● онлайн</text>
+  <!-- Products -->
+  <rect x="70" y="70" width="118" height="98" rx="10" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
+  <rect x="70" y="70" width="118" height="58" rx="10" fill="#252850"/>
+  <text x="129" y="105" text-anchor="middle" font-size="26">👟</text>
+  <text x="129" y="135" text-anchor="middle" fill="white" font-size="11">Кроссовки</text>
+  <text x="129" y="151" text-anchor="middle" fill="#6080f8" font-size="12" font-weight="700">2 490 ₽</text>
+  <rect x="198" y="70" width="118" height="98" rx="10" fill="#1e203c" stroke="#2e3060" stroke-width="1"/>
+  <rect x="198" y="70" width="118" height="58" rx="10" fill="#252850"/>
+  <text x="257" y="105" text-anchor="middle" font-size="26">👕</text>
+  <text x="257" y="135" text-anchor="middle" fill="white" font-size="11">Футболка</text>
+  <text x="257" y="151" text-anchor="middle" fill="#6080f8" font-size="12" font-weight="700">890 ₽</text>
+  <!-- Cart btn -->
+  <rect x="70" y="178" width="246" height="38" rx="10" fill="#4169E1"/>
+  <text x="193" y="202" text-anchor="middle" fill="white" font-size="12" font-weight="600">🛒  Корзина · 3 товара</text>
+  <!-- Bottom bar -->
+  <rect x="55" y="228" width="290" height="24" rx="0" fill="#12122a"/>
+  <rect x="55" y="248" width="290" height="4" rx="22" fill="#12122a"/>
+  <text x="130" y="244" text-anchor="middle" fill="#4a4a7a" font-size="18">⌂</text>
+  <text x="200" y="244" text-anchor="middle" fill="#6080f8" font-size="18">🛍</text>
+  <text x="270" y="244" text-anchor="middle" fill="#4a4a7a" font-size="18">☰</text>
+</svg>

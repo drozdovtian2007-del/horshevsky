@@ -315,25 +315,18 @@ main { position: relative; z-index: 1; }
   background: rgba(0,0,0,.5); border: 1px solid var(--line);
   padding: 4px 10px; border-radius: 4px; color: var(--accent);
 }
-/* Placeholder visuals */
-.img-bot-1 { background: linear-gradient(135deg, #0f3460 0%, #4169E1 100%); }
-.img-bot-2 { background: radial-gradient(circle at 30% 30%, #4169E1, #0f3460 60%); }
-.img-bot-3 { background: linear-gradient(45deg, #1a1a3a 0%, #4169E1 100%); }
-.img-site-1 { background: linear-gradient(135deg, #2a1a5e, #4169E1); }
-.img-site-2 { background: conic-gradient(from 90deg at 60% 40%, #0f3460, #4169E1, #0f3460); }
-.img-site-3 { background: radial-gradient(ellipse at top left, #4169E1, #0a0a15 70%); }
-.img-mini-1 { background: linear-gradient(160deg, #4169E1, #1a1a3a); }
-.img-mini-2 { background: linear-gradient(135deg, #1e1e40, #0f3460 50%, #4169E1); }
-.img-mini-3 { background: radial-gradient(circle at 70% 30%, #4169E1, #0a0a15 70%); }
-.card-img::before {
-  content: '';
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
-  background-size: 24px 24px;
-  mix-blend-mode: overlay;
-}
+/* Project mockup images */
+.img-bot-1  { background: #0d0d1a url(../images/projects/bot1.svg) center/cover no-repeat; }
+.img-bot-2  { background: #0d0d1a url(../images/projects/bot2.svg) center/cover no-repeat; }
+.img-bot-3  { background: #0d0d1a url(../images/projects/bot3.svg) center/cover no-repeat; }
+.img-site-1 { background: #0d0d1a url(../images/projects/site1.svg) center/cover no-repeat; }
+.img-site-2 { background: #0d0d1a url(../images/projects/site2.svg) center/cover no-repeat; }
+.img-site-3 { background: #0d0d1a url(../images/projects/site3.svg) center/cover no-repeat; }
+.img-mini-1 { background: #0d0d1a url(../images/projects/mini1.svg) center/cover no-repeat; }
+.img-mini-2 { background: #0d0d1a url(../images/projects/mini2.svg) center/cover no-repeat; }
+.img-mini-3 { background: #0d0d1a url(../images/projects/mini3.svg) center/cover no-repeat; }
+.card-img { transition: transform .5s var(--ease); }
+.card:hover .card-img { transform: scale(1.04); }
 .card-body { padding: 22px 22px 24px; }
 .card-body h3 { font-size: 19px; font-weight: 500; margin-bottom: 8px; }
 .card-body p { color: var(--ink-dim); font-size: 14px; margin-bottom: 14px; line-height: 1.5; }
@@ -467,15 +460,35 @@ main { position: relative; z-index: 1; }
   font-size: 28px; color: var(--ink-dim); line-height: 1;
 }
 .modal-close:hover { color: #fff; }
-.modal-title { font-size: 24px; font-weight: 500; margin-bottom: 14px; }
-.modal-text { color: var(--ink-dim); margin-bottom: 18px; line-height: 1.6; }
-.modal-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.modal-preview {
+  width: 100%; aspect-ratio: 16/10; border-radius: 10px; overflow: hidden;
+  margin-bottom: 24px; background: #0d0d1a; border: 1px solid var(--line);
+  background-size: cover; background-position: center;
+  transition: transform .4s var(--ease);
+}
+.modal-preview:hover { transform: scale(1.02); }
+.modal-title { font-size: 22px; font-weight: 600; margin-bottom: 10px; }
+.modal-text { color: var(--ink-dim); margin-bottom: 16px; line-height: 1.6; font-size: 14px; }
+.modal-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .modal-tags span {
   font-family: var(--font-mono); font-size: 11px;
   padding: 5px 10px; border-radius: 4px;
   background: rgba(65,105,225,.1); border: 1px solid rgba(65,105,225,.3);
   color: var(--accent);
 }
+.modal-review {
+  background: rgba(65,105,225,.07); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; padding: 14px 16px; margin-bottom: 20px;
+  font-style: italic; color: var(--ink-dim); font-size: 13px; line-height: 1.5;
+}
+.modal-review strong { color: #fff; font-style: normal; display: block; margin-top: 8px; font-size: 12px; }
+.modal-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--accent); color: #fff; font-weight: 600; font-size: 14px;
+  padding: 12px 24px; border-radius: 10px; transition: opacity .25s, transform .25s;
+  text-decoration: none;
+}
+.modal-cta:hover { opacity: .88; transform: translateY(-2px); }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes modalIn { from { opacity: 0; transform: translateY(20px) scale(.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
 

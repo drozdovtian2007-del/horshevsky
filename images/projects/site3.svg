@@ -1,0 +1,38 @@
+<svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+  <rect width="400" height="260" fill="#0d0d1a"/>
+  <rect x="20" y="10" width="360" height="240" rx="12" fill="#0e0e20" stroke="#2a2a50" stroke-width="1.5"/>
+  <rect x="20" y="10" width="360" height="32" rx="12" fill="#12122a"/>
+  <rect x="20" y="30" width="360" height="12" fill="#12122a"/>
+  <circle cx="40" cy="26" r="5" fill="#ff5f56"/>
+  <circle cx="58" cy="26" r="5" fill="#ffbd2e"/>
+  <circle cx="76" cy="26" r="5" fill="#27c93f"/>
+  <rect x="100" y="18" width="200" height="16" rx="8" fill="#1e203c"/>
+  <text x="200" y="30" text-anchor="middle" fill="#5a6a9a" font-size="9">alexkovalev.dev</text>
+  <!-- Content: centered personal card -->
+  <circle cx="200" cy="90" r="34" fill="url(#avgrad)" stroke="#4169E1" stroke-width="2"/>
+  <defs>
+    <radialGradient id="avgrad" cx="40%" cy="35%">
+      <stop offset="0%" stop-color="#3a5aee"/>
+      <stop offset="100%" stop-color="#1a2a6e"/>
+    </radialGradient>
+  </defs>
+  <text x="200" y="97" text-anchor="middle" fill="white" font-size="28">АК</text>
+  <text x="200" y="144" text-anchor="middle" fill="white" font-size="15" font-weight="700">Алекс Ковалёв</text>
+  <text x="200" y="160" text-anchor="middle" fill="#6080f8" font-size="11">Full-stack разработчик</text>
+  <!-- Tags -->
+  <rect x="128" y="170" width="48" height="18" rx="9" fill="#1e2a5a" stroke="#4169E1" stroke-width="1"/>
+  <text x="152" y="183" text-anchor="middle" fill="#91b4ff" font-size="9">Python</text>
+  <rect x="182" y="170" width="36" height="18" rx="9" fill="#1e2a5a" stroke="#4169E1" stroke-width="1"/>
+  <text x="200" y="183" text-anchor="middle" fill="#91b4ff" font-size="9">React</text>
+  <rect x="224" y="170" width="48" height="18" rx="9" fill="#1e2a5a" stroke="#4169E1" stroke-width="1"/>
+  <text x="248" y="183" text-anchor="middle" fill="#91b4ff" font-size="9">Node.js</text>
+  <!-- Social links -->
+  <rect x="134" y="198" width="40" height="32" rx="8" fill="#1a1a36" stroke="#2a2a50" stroke-width="1"/>
+  <text x="154" y="219" text-anchor="middle" font-size="18">🐙</text>
+  <rect x="180" y="198" width="40" height="32" rx="8" fill="#1a1a36" stroke="#2a2a50" stroke-width="1"/>
+  <text x="200" y="219" text-anchor="middle" font-size="18">✈</text>
+  <rect x="226" y="198" width="40" height="32" rx="8" fill="#1a1a36" stroke="#2a2a50" stroke-width="1"/>
+  <text x="246" y="219" text-anchor="middle" font-size="18">💼</text>
+  <!-- Hire button -->
+  <rect x="134" y="238" width="132" height="6" rx="3" fill="#4169E1" opacity=".4"/>
+</svg>
