@@ -1,33 +1,28 @@
 (() => {
   const form = document.getElementById('contact-form');
   if (!form) return;
-  const status = form.querySelector('.form-status');
   const btn = form.querySelector('.btn-submit');
   const cfg = window.CONFIG || {};
-
-  const setStatus = (msg, type) => {
-    status.textContent = msg;
-    status.className = 'form-status ' + (type || '');
-  };
+  const toast = (msg, type) => window.showToast ? window.showToast(msg, type) : null;
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const message = form.message.value.trim();
     if (!message) {
-      setStatus('Введите сообщение перед отправкой.', 'err');
+      toast('Введите сообщение перед отправкой.', 'err');
       return;
     }
 
     const ownerUsername = cfg.TELEGRAM_USERNAME || '';
     if (!ownerUsername) {
-      setStatus('Telegram username владельца не задан.', 'err');
+      toast('Telegram username владельца не задан.', 'err');
       return;
     }
 
     btn.classList.add('loading');
     btn.disabled = true;
-    setStatus('Открываю Telegram…', '');
+    toast('Открываю Telegram…', 'ok');
 
     const plainText =
       `Привет! Пишу с сайта Horshevsky.\n\n` +
@@ -56,7 +51,7 @@
 
     const redirectUrl = `https://t.me/${ownerUsername}?text=${encodeURIComponent(plainText)}`;
 
-    setStatus('Готово! Переходим в Telegram — остаётся нажать «Отправить».', 'ok');
+    toast('Готово! Переходим в Telegram — остаётся нажать «Отправить».', 'ok');
     form.reset();
 
     setTimeout(() => {

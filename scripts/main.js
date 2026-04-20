@@ -74,6 +74,83 @@
     });
   });
 
+  // ---- Back to top
+  const backTop = document.getElementById('back-top');
+  if (backTop) {
+    window.addEventListener('scroll', () => {
+      backTop.classList.toggle('show', window.scrollY > 400);
+    }, { passive: true });
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  }
+
+  // ---- Char counter
+  const msgArea = document.getElementById('f-msg');
+  const charCounter = document.getElementById('char-counter');
+  if (msgArea && charCounter) {
+    msgArea.addEventListener('input', () => {
+      const len = msgArea.value.length;
+      charCounter.textContent = `${len} / 500`;
+      charCounter.className = 'char-counter' + (len > 450 ? ' warn' : '') + (len >= 500 ? ' over' : '');
+    });
+  }
+
+  // ---- Toast helper (global)
+  window.showToast = (msg, type = 'ok', duration = 3500) => {
+    const toast = document.getElementById('toast');
+    if (!toast) return;
+    toast.querySelector('.toast-msg').textContent = msg;
+    toast.className = `toast ${type} show`;
+    clearTimeout(toast._t);
+    toast._t = setTimeout(() => toast.classList.remove('show'), duration);
+  };
+
+  // ---- Fake visitor counter
+  const vcEl = document.getElementById('visitor-count');
+  if (vcEl) {
+    const base = 2 + Math.floor(Math.random() * 4);
+    vcEl.textContent = base;
+    setInterval(() => {
+      const delta = Math.random() < .5 ? 1 : -1;
+      const cur = parseInt(vcEl.textContent);
+      const next = Math.max(1, Math.min(8, cur + delta));
+      if (next !== cur) {
+        vcEl.style.opacity = '0';
+        setTimeout(() => { vcEl.textContent = next; vcEl.style.opacity = '1'; }, 200);
+      }
+    }, 7000 + Math.random() * 5000);
+  }
+
+  // ---- Cursor trail
+  const trailCanvas = document.getElementById('cursor-trail');
+  if (trailCanvas && !window.matchMedia('(hover: none)').matches) {
+    const ctx = trailCanvas.getContext('2d');
+    const resize = () => { trailCanvas.width = window.innerWidth; trailCanvas.height = window.innerHeight; };
+    resize();
+    window.addEventListener('resize', resize);
+    const particles = [];
+    let mx = -100, my = -100;
+    window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+    const createParticle = () => {
+      particles.push({ x: mx, y: my, r: 2.5 + Math.random() * 2, alpha: .7, vx: (Math.random()-.5)*.8, vy: (Math.random()-.5)*.8 });
+    };
+    let frame = 0;
+    const loop = () => {
+      ctx.clearRect(0, 0, trailCanvas.width, trailCanvas.height);
+      if (frame++ % 2 === 0) createParticle();
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx; p.y += p.vy; p.alpha -= .025; p.r *= .97;
+        if (p.alpha <= 0) { particles.splice(i, 1); continue; }
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(65,105,225,${p.alpha.toFixed(2)})`;
+        ctx.fill();
+      }
+      requestAnimationFrame(loop);
+    };
+    loop();
+  }
+
   // ---- Duplicate reviews row for seamless marquee
   const row = document.querySelector('.reviews-row');
   if (row) {

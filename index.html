@@ -22,6 +22,15 @@
 <div class="cursor-dot"></div>
 <div class="cursor-ring"></div>
 
+<!-- Cursor trail canvas -->
+<canvas id="cursor-trail"></canvas>
+
+<!-- Back to top -->
+<button class="back-top" id="back-top" aria-label="Наверх">↑</button>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="alert"><span class="toast-icon"></span><span class="toast-msg"></span></div>
+
 <!-- Scroll progress -->
 <div class="scroll-progress"></div>
 
@@ -48,6 +57,7 @@
     <p class="hero-sub">
       <span class="typewriter"></span><span class="caret">|</span>
     </p>
+    <div class="visitor-badge"><span class="visitor-dot"></span><span id="visitor-count">3</span> человека смотрят сейчас</div>
     <div class="hero-cta">
       <a href="#portfolio" class="btn btn-primary">
         <span data-i18n="hero_cta">Посмотреть работы</span>
@@ -312,13 +322,15 @@
 
   <div class="contact-wrap">
     <div class="contact-intro reveal">
+      <div class="status-badge"><span class="status-dot"></span>Доступен для заказов</div>
       <h3 data-i18n="contact_sub">Опишите задачу — отвечу быстро.</h3>
     </div>
 
     <form id="contact-form" class="contact-form reveal" novalidate>
       <div class="field">
-        <textarea name="message" id="f-msg" rows="6" required></textarea>
+        <textarea name="message" id="f-msg" rows="6" required maxlength="500"></textarea>
         <label for="f-msg" data-i18n="contact_label">Сообщение</label>
+        <span class="char-counter" id="char-counter">0 / 500</span>
       </div>
       <button type="submit" class="btn btn-primary btn-submit">
         <span class="btn-label" data-i18n="contact_send">Отправить сообщение</span>
