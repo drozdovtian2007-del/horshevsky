@@ -193,7 +193,6 @@ main { position: relative; z-index: 1; }
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  opacity: 0; animation: fadeUp .9s var(--ease) .35s forwards;
 }
 .hero-title::before {
   content: attr(data-text);
