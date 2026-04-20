@@ -1,9 +1,6 @@
 /* ============ CUSTOM SCROLLBAR ============ */
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--bg, #0a0a15); }
-::-webkit-scrollbar-thumb { background: #4169E1; border-radius: 2px; }
-::-webkit-scrollbar-thumb:hover { background: #6b8ff5; }
-* { scrollbar-width: thin; scrollbar-color: #4169E1 #0a0a15; }
+::-webkit-scrollbar { width: 0; }
+* { scrollbar-width: none; }
 
 /* ============ RESET & VARS ============ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
