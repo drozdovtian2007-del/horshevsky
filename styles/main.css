@@ -183,6 +183,11 @@ main { position: relative; z-index: 1; }
 /* ============ HERO ============ */
 .hero { padding: 0 8vw; overflow: hidden; }
 .hero-content { position: relative; z-index: 2; max-width: 1000px; }
+.hero-emblem {
+  margin-bottom: 16px; opacity: 0;
+  animation: fadeUp .6s var(--ease) .1s forwards;
+}
+.hero-emblem svg { filter: drop-shadow(0 0 14px rgba(65,105,225,.3)); }
 .hero-tag { font-family: var(--font-mono); color: var(--accent); font-size: 14px; margin-bottom: 24px; opacity: 0; animation: fadeUp .7s var(--ease) .2s forwards; }
 .hero-title {
   font-size: clamp(60px, 11vw, 160px);
@@ -193,7 +198,7 @@ main { position: relative; z-index: 1; }
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  opacity: 0; animation: fadeUp .9s var(--ease) .35s forwards;
+  min-height: .95em;
 }
 .hero-title::before {
   content: attr(data-text);
@@ -213,11 +218,38 @@ main { position: relative; z-index: 1; }
 .hero-sub {
   font-family: var(--font-mono); color: var(--ink-dim);
   font-size: clamp(14px, 1.4vw, 18px); margin-top: 20px;
-  opacity: 0; animation: fadeUp .7s var(--ease) .7s forwards;
+  opacity: 1;
   min-height: 1.5em;
+  display: flex; gap: 0; flex-wrap: wrap; align-items: center;
 }
+.hero-sub-word {
+  opacity: 0; transform: translateY(6px);
+  transition: opacity .4s ease, transform .4s ease;
+  white-space: pre;
+}
+.hero-sub-word.in { opacity: 1; transform: none; }
 .caret { color: var(--accent); animation: blink 1s infinite step-end; }
 @keyframes blink { 50% { opacity: 0; } }
+
+/* ---- Marquee ticker ---- */
+.marquee-band {
+  overflow: hidden; padding: 14px 0;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  background: rgba(255,255,255,.02);
+  position: relative; z-index: 1;
+}
+.marquee-track {
+  display: flex; gap: 0;
+  animation: marqueeTick 18s linear infinite;
+  width: max-content;
+}
+.marquee-track span {
+  font-family: var(--font-mono); font-size: 13px; letter-spacing: .08em;
+  color: var(--ink-dim); padding: 0 32px; white-space: nowrap;
+  text-transform: uppercase;
+}
+.marquee-track span b { color: var(--accent); font-weight: 700; }
+@keyframes marqueeTick { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 .hero-cta {
   display: flex; gap: 16px; margin-top: 44px;
   opacity: 0; animation: fadeUp .7s var(--ease) 1.4s forwards;

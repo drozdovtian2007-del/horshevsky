@@ -3,21 +3,22 @@
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // ---- Typewriter
-  const typer = document.querySelector('.typewriter');
-  if (typer) {
-    const words = [
-      'Telegram боты',
-      'Сайты и лендинги',
-      'Telegram Mini Apps'
-    ];
-    const joined = words.join('  ·  ');
+  // ---- Typewriter: hero title
+  const titleEl = document.querySelector('.hero-title');
+  if (titleEl) {
+    const text = 'Horshevsky';
     let i = 0;
-    const type = () => {
-      typer.textContent = joined.slice(0, i);
-      if (i < joined.length) { i++; setTimeout(type, 55); }
+    const typeTitle = () => {
+      titleEl.textContent = text.slice(0, i);
+      titleEl.setAttribute('data-text', text.slice(0, i));
+      if (i < text.length) { i++; setTimeout(typeTitle, 90); }
+      else {
+        // After title finishes, fade in subtitle words
+        const words = document.querySelectorAll('.hero-sub-word');
+        words.forEach((w, idx) => setTimeout(() => w.classList.add('in'), idx * 120));
+      }
     };
-    setTimeout(type, 1200);
+    setTimeout(typeTitle, 400);
   }
 
   // ---- Scroll progress bar
