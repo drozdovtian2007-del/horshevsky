@@ -6,6 +6,5 @@
 window.CONFIG = {
   TELEGRAM_BOT_TOKEN: "8562673878:AAERKnl6pgQuohVzA3Rbgmmoc2BsiL2fuLU",
   TELEGRAM_CHAT_ID: "8093483873",
-  TELEGRAM_USERNAME: "unpoorable",
-  SITE_NAME: "Horshevsky Portfolio"
+  TELEGRAM_USERNAME: "unpoorable"
 };

@@ -44,12 +44,6 @@
     }
   };
 
-  // Typewriter strings per language
-  const typewriterStrings = {
-    ru: ['Telegram боты', 'Сайты и лендинги', 'Telegram Mini Apps'],
-    en: ['Telegram bots',  'Websites & landings', 'Telegram Mini Apps'],
-  };
-
   let current = localStorage.getItem('lang') || 'ru';
 
   const apply = (lang) => {
@@ -64,9 +58,6 @@
       if (!a.dataset.labelRu) a.dataset.labelRu = a.dataset.label;
       a.dataset.label = lang === 'en' ? (a.dataset.labelEn || a.dataset.labelRu) : a.dataset.labelRu;
     });
-
-    // Swap typewriter strings if window.TW_STRINGS exists
-    if (window.TW_STRINGS) window.TW_STRINGS = typewriterStrings[lang];
 
     // Toggle buttons
     document.querySelectorAll('#lang-toggle button').forEach(btn => {
