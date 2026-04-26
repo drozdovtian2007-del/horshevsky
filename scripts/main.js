@@ -1,4 +1,11 @@
 (() => {
+  // ---- Block selection / drag / context menu (PNG-like feel), allow inputs
+  const isEditable = (el) => el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable);
+  document.addEventListener('selectstart', (e) => { if (!isEditable(e.target)) e.preventDefault(); });
+  document.addEventListener('dragstart', (e) => e.preventDefault());
+  document.addEventListener('contextmenu', (e) => { if (!isEditable(e.target)) e.preventDefault(); });
+  document.addEventListener('copy', (e) => { if (!isEditable(e.target)) e.preventDefault(); });
+
   // ---- Year
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
