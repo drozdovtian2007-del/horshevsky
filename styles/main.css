@@ -377,7 +377,7 @@ main { position: relative; z-index: 1; }
 .img-bot-3  { background: #0d0d1a url(../images/projects/bot3.svg) center/cover no-repeat; }
 .img-site-1 { background: #0d0d1a url(../images/projects/site1.svg) center/cover no-repeat; }
 .img-site-2 { background: #0d0d1a url(../images/projects/site2.svg) center/cover no-repeat; }
-.img-site-3 { background: #0d0d1a url(../images/projects/site3.svg) center/cover no-repeat; }
+.img-site-3 { background: #0d0d1a url(../images/projects/va1fy.svg) center/cover no-repeat; }
 .img-mini-1 { background: #0d0d1a url(../images/projects/mini1.svg) center/cover no-repeat; }
 .img-mini-2 { background: #0d0d1a url(../images/projects/mini2.svg) center/cover no-repeat; }
 .img-mini-3 { background: #0d0d1a url(../images/projects/mini3.svg) center/cover no-repeat; }
@@ -522,13 +522,35 @@ main { position: relative; z-index: 1; }
   z-index: 10;
 }
 .modal-close:hover { background: rgba(65,105,225,.2); color: #fff; transform: rotate(90deg); }
+.modal-gallery { position: relative; margin-bottom: 24px; }
 .modal-preview {
   width: 100%; aspect-ratio: 16/10; border-radius: 10px; overflow: hidden;
-  margin-bottom: 24px; background: #0d0d1a; border: 1px solid var(--line);
+  background: #0d0d1a; border: 1px solid var(--line);
   background-size: cover; background-position: center;
-  transition: transform .4s var(--ease);
+  transition: background-image .25s ease, transform .4s var(--ease);
 }
 .modal-preview:hover { transform: scale(1.02); }
+.modal-gallery .gal-btn {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 40px; height: 40px; border-radius: 50%;
+  background: rgba(10,10,25,.6); border: 1px solid var(--line); color: #fff;
+  font-size: 24px; line-height: 38px; text-align: center; cursor: pointer;
+  display: none; transition: background .2s, transform .2s;
+  backdrop-filter: blur(6px);
+}
+.modal-gallery .gal-btn:hover { background: rgba(65,105,225,.5); }
+.modal-gallery .gal-prev { left: 10px; }
+.modal-gallery .gal-next { right: 10px; }
+.modal-gallery.has-multi .gal-btn { display: block; }
+.gal-dots { display: none; gap: 8px; justify-content: center; margin-top: 10px; }
+.modal-gallery.has-multi .gal-dots { display: flex; }
+.gal-dots button {
+  width: 8px; height: 8px; border-radius: 50%; padding: 0;
+  background: rgba(255,255,255,.25); border: 0; cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+.gal-dots button:hover { background: rgba(255,255,255,.5); }
+.gal-dots button.active { background: var(--accent, #4169E1); transform: scale(1.3); }
 .modal-title { font-size: 22px; font-weight: 600; margin-bottom: 10px; }
 .modal-text { color: var(--ink-dim); margin-bottom: 16px; line-height: 1.6; font-size: 14px; }
 .modal-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }

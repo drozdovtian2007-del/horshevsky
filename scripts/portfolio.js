@@ -52,11 +52,17 @@
       review: { text: '«Запустили сайт за неделю — всё по ТЗ и даже чуть лучше. Редактируем контент сами, без разработчиков.»', author: 'Ольга Р. · Маркетолог' }
     },
     site3: {
-      t: 'Сайт-визитка',
-      d: 'Персональный бренд: минимализм, быстрая загрузка, адаптив под любые экраны. Three.js-фон, кастомный курсор, плавные анимации. Хостинг на GitHub Pages — бесплатно.',
-      tags: ['HTML', 'CSS', 'Three.js', 'GSAP'],
-      img: 'images/projects/site3.svg',
-      review: { text: '«Переделал мой старый сайт под мобильные — теперь не стыдно делиться ссылкой. Профессионально и быстро.»', author: 'Юлия А. · Коуч' }
+      t: 'Va1fy — Premium Caviar',
+      d: 'Сайт бренда премиальной икры: подводная сцена с анимированными пузырьками, плавающая рыбка-маскот, индикатор «глубины» при скролле, фоновая музыка и каталог банок с ценами. Чёткий one-page с навигацией: Главная · Обо мне · Икра · Хайлайты. Деплой на Railway. Ссылка: https://va1fy-site-production-1a9c.up.railway.app/',
+      tags: ['HTML', 'CSS', 'JS', 'Three.js', 'GSAP', 'Railway'],
+      img: 'images/projects/va1fy.svg',
+      imgs: [
+        'images/projects/va1fy.svg',
+        'images/projects/va1fy-2.jpg',
+        'images/projects/va1fy-3.jpg',
+        'images/projects/va1fy-4.jpg'
+      ],
+      review: { text: '«Сайт получился именно таким, как я хотел — атмосфера моря, пузыри, рыбка. Бренду теперь не стыдно показать клиентам.»', author: 'Va1fy · Premium Caviar' }
     },
     mini1: {
       t: 'Mini App — Каталог',
@@ -87,10 +93,30 @@
   const mD       = modal.querySelector('.modal-text');
   const mTags    = modal.querySelector('.modal-tags');
   const mReview  = modal.querySelector('.modal-review');
+  const mGallery = modal.querySelector('.modal-gallery');
+  const mPrev    = modal.querySelector('.gal-prev');
+  const mNext    = modal.querySelector('.gal-next');
+  const mDots    = modal.querySelector('.gal-dots');
+
+  let gallery = [];
+  let gIdx = 0;
+  const showSlide = (i) => {
+    if (!gallery.length) return;
+    gIdx = (i + gallery.length) % gallery.length;
+    mPreview.style.backgroundImage = `url(${gallery[gIdx]})`;
+    mDots.querySelectorAll('button').forEach((d, k) => d.classList.toggle('active', k === gIdx));
+  };
 
   const openModal = (id) => {
     const item = data[id]; if (!item) return;
-    mPreview.style.backgroundImage = `url(${item.img})`;
+    gallery = (Array.isArray(item.imgs) && item.imgs.length) ? item.imgs.slice() : [item.img];
+    gIdx = 0;
+    const multi = gallery.length > 1;
+    mGallery.classList.toggle('has-multi', multi);
+    mDots.innerHTML = multi
+      ? gallery.map((_, k) => `<button type="button" data-i="${k}" aria-label="Слайд ${k+1}"></button>`).join('')
+      : '';
+    showSlide(0);
     mT.textContent = item.t;
     mD.textContent = item.d;
     mTags.innerHTML = item.tags.map(t => `<span>${t}</span>`).join('');
@@ -98,6 +124,18 @@
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
   };
+
+  mPrev.addEventListener('click', () => showSlide(gIdx - 1));
+  mNext.addEventListener('click', () => showSlide(gIdx + 1));
+  mDots.addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-i]'); if (b) showSlide(+b.dataset.i);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (modal.getAttribute('aria-hidden') === 'false' && gallery.length > 1) {
+      if (e.key === 'ArrowLeft')  showSlide(gIdx - 1);
+      if (e.key === 'ArrowRight') showSlide(gIdx + 1);
+    }
+  });
   const closeModal = () => {
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
