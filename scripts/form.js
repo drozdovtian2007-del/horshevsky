@@ -1,4 +1,14 @@
 (() => {
+  const qrModal = document.getElementById('qr-modal');
+  const qrOpen  = document.getElementById('qr-open');
+  if (qrModal && qrOpen) {
+    const open = () => { qrModal.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden'; };
+    const close = () => { qrModal.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; };
+    qrOpen.addEventListener('click', open);
+    qrModal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', close));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && qrModal.getAttribute('aria-hidden') === 'false') close(); });
+  }
+
   const form = document.getElementById('contact-form');
   if (!form) return;
   const btn = form.querySelector('.btn-submit');
