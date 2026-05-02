@@ -55,9 +55,10 @@
       t: 'Va1fy — Premium Caviar',
       d: 'Сайт бренда премиальной икры: подводная сцена с анимированными пузырьками, плавающая рыбка-маскот, индикатор «глубины» при скролле, фоновая музыка и каталог банок с ценами. Чёткий one-page с навигацией: Главная · Обо мне · Икра · Хайлайты. Деплой на Railway. Ссылка: https://va1fy-site-production-1a9c.up.railway.app/',
       tags: ['HTML', 'CSS', 'JS', 'Three.js', 'GSAP', 'Railway'],
-      img: 'images/projects/va1fy.svg',
+      link: 'https://va1fy-sait.up.railway.app/',
+      img: 'images/projects/va1fy-3.jpg',
       imgs: [
-        'images/projects/va1fy.svg',
+        'images/projects/va1fy-3.jpg',
         'images/projects/va1fy-2.jpg',
         'images/projects/va1fy-3.jpg',
         'images/projects/va1fy-4.jpg'
