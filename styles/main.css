@@ -387,8 +387,8 @@ main { position: relative; z-index: 1; }
 .img-bot-3  { background: #0d0d1a url(../images/projects/bot3.svg) center/cover no-repeat; }
 .img-site-1 { background: #0d0d1a url(../images/projects/site1.svg) center/cover no-repeat; }
 .img-site-2 { background: #0d0d1a url(../images/projects/site2.svg) center/cover no-repeat; }
-.img-site-3 { background: #0d1020 url(../images/projects/va1fy-3.jpg) center/cover no-repeat; }
-.img-site-4 { background: #120820 url(../images/projects/adsradar-1.jpg) center/cover no-repeat; }
+.img-site-3 { background: #0d0d1a url(../images/projects/va1fy.svg) center/cover no-repeat; }
+.img-site-4 { background: #120820 url(../images/projects/adsradar.svg) center/cover no-repeat; }
 .img-mini-1 { background: #0d0d1a url(../images/projects/mini1.svg) center/cover no-repeat; }
 .img-mini-2 { background: #0d0d1a url(../images/projects/mini2.svg) center/cover no-repeat; }
 .img-mini-3 { background: #0d0d1a url(../images/projects/mini3.svg) center/cover no-repeat; }

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#3a1a6e"/>
+      <stop offset="60%" stop-color="#1a0c3d"/>
+      <stop offset="100%" stop-color="#0a0418"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dot" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#e879f9" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="400" cy="250" r="220" fill="url(#glow)"/>
+  <!-- radar rings -->
+  <circle cx="400" cy="250" r="180" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.3"/>
+  <circle cx="400" cy="250" r="130" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <circle cx="400" cy="250" r="80"  fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="400" cy="250" r="30"  fill="none" stroke="#a855f7" stroke-width="2" opacity="0.6"/>
+  <!-- crosshairs -->
+  <line x1="220" y1="250" x2="580" y2="250" stroke="#7c3aed" stroke-width="1" opacity="0.3"/>
+  <line x1="400" y1="70"  x2="400" y2="430" stroke="#7c3aed" stroke-width="1" opacity="0.3"/>
+  <!-- radar sweep line -->
+  <line x1="400" y1="250" x2="550" y2="115" stroke="#c084fc" stroke-width="2" opacity="0.7"/>
+  <!-- ping dots -->
+  <circle cx="510" cy="160" r="6" fill="url(#dot)"/>
+  <circle cx="310" cy="190" r="4" fill="url(#dot)" opacity="0.7"/>
+  <circle cx="460" cy="320" r="5" fill="url(#dot)" opacity="0.6"/>
+  <circle cx="340" cy="340" r="3" fill="url(#dot)" opacity="0.5"/>
+  <!-- title -->
+  <text x="400" y="195" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="5" fill="#c084fc" opacity="0.85">YOUTUBE · AD DETECTOR</text>
+  <text x="400" y="300" text-anchor="middle" font-family="Inter, Segoe UI, Arial Black, sans-serif" font-weight="900" font-size="100" fill="#ffffff" letter-spacing="-3">Ads<tspan fill="#c084fc">Radar</tspan></text>
+</svg>
