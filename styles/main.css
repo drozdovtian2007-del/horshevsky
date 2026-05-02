@@ -388,6 +388,7 @@ main { position: relative; z-index: 1; }
 .img-site-1 { background: #0d0d1a url(../images/projects/site1.svg) center/cover no-repeat; }
 .img-site-2 { background: #0d0d1a url(../images/projects/site2.svg) center/cover no-repeat; }
 .img-site-3 { background: #0d0d1a url(../images/projects/va1fy.svg) center/cover no-repeat; }
+.img-site-4 { background: #120820 url(../images/projects/adsradar-1.jpg) center/cover no-repeat; }
 .img-mini-1 { background: #0d0d1a url(../images/projects/mini1.svg) center/cover no-repeat; }
 .img-mini-2 { background: #0d0d1a url(../images/projects/mini2.svg) center/cover no-repeat; }
 .img-mini-3 { background: #0d0d1a url(../images/projects/mini3.svg) center/cover no-repeat; }
@@ -601,6 +602,14 @@ main { position: relative; z-index: 1; }
   font-style: italic; color: var(--ink-dim); font-size: 13px; line-height: 1.5;
 }
 .modal-review strong { color: #fff; font-style: normal; display: block; margin-top: 8px; font-size: 12px; }
+.modal-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.modal-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: var(--accent); font-weight: 600; font-size: 14px;
+  padding: 12px 24px; border-radius: 10px; border: 1px solid var(--accent);
+  transition: background .25s, color .25s, transform .25s; text-decoration: none;
+}
+.modal-link:hover { background: var(--accent); color: #fff; transform: translateY(-2px); }
 .modal-cta {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--accent); color: #fff; font-weight: 600; font-size: 14px;

@@ -64,6 +64,18 @@
       ],
       review: { text: '«Сайт получился именно таким, как я хотел — атмосфера моря, пузыри, рыбка. Бренду теперь не стыдно показать клиентам.»', author: 'Va1fy · Premium Caviar' }
     },
+    site4: {
+      t: 'AdsRadar',
+      d: 'Веб-сервис для анализа YouTube-видео: вставляешь ссылку — и получаешь список всех рекламных интеграций с названием бренда, доменом и описанием. Авторизация пользователей, лимит запросов в день, чистый фиолетовый UI. Деплой на Railway. Ссылка: https://youtube-adradar-production.up.railway.app/',
+      tags: ['HTML', 'CSS', 'JS', 'Python', 'Railway'],
+      img: 'images/projects/adsradar-1.jpg',
+      imgs: [
+        'images/projects/adsradar-1.jpg',
+        'images/projects/adsradar-2.jpg'
+      ],
+      link: 'https://youtube-adradar-production.up.railway.app/',
+      review: { text: '«Нашёл всех рекламодателей конкурентов за пару минут — просто вставил ссылку и получил полный список. Очень удобно.»', author: 'Клиент · AdsRadar' }
+    },
     mini1: {
       t: 'Mini App — Каталог',
       d: 'Интернет-магазин внутри Telegram: карточки товаров с фото, корзина, оплата через Telegram Payments. Данные синхронизируются с ботом в реальном времени.',
@@ -93,6 +105,7 @@
   const mD       = modal.querySelector('.modal-text');
   const mTags    = modal.querySelector('.modal-tags');
   const mReview  = modal.querySelector('.modal-review');
+  const mLinkBtn = modal.querySelector('.modal-link');
   const mGallery = modal.querySelector('.modal-gallery');
   const mPrev    = modal.querySelector('.gal-prev');
   const mNext    = modal.querySelector('.gal-next');
@@ -121,6 +134,8 @@
     mD.textContent = item.d;
     mTags.innerHTML = item.tags.map(t => `<span>${t}</span>`).join('');
     mReview.innerHTML = `${item.review.text}<strong>${item.review.author}</strong>`;
+    if (item.link) { mLinkBtn.href = item.link; mLinkBtn.style.display = ''; }
+    else { mLinkBtn.style.display = 'none'; }
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
   };
